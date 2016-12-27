@@ -41,16 +41,16 @@
 		00DCE32A1E11FD4D00E6F158 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		00DCE32B1E11FD4D00E6F158 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.debug.xcconfig"; sourceTree = "<group>"; };
-		EF7C35F41E12557F00618589 /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
-		EF7C35F51E12557F00618589 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
-		EF7C35F61E12557F00618589 /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		EF7C35F41E12557F00618589 /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderCell.h; path = ../Controller/OrderCell.h; sourceTree = "<group>"; };
+		EF7C35F51E12557F00618589 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderCell.m; path = ../Controller/OrderCell.m; sourceTree = "<group>"; };
+		EF7C35F61E12557F00618589 /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderCell.xib; path = ../Controller/OrderCell.xib; sourceTree = "<group>"; };
 		EF7C35F71E12557F00618589 /* OrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderController.h; sourceTree = "<group>"; };
 		EF7C35F81E12557F00618589 /* OrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderController.m; sourceTree = "<group>"; };
-		EF7C35F91E12557F00618589 /* OrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHeaderView.h; sourceTree = "<group>"; };
-		EF7C35FA1E12557F00618589 /* OrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHeaderView.m; sourceTree = "<group>"; };
-		EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderHeaderView.xib; sourceTree = "<group>"; };
-		EF7C35FC1E12557F00618589 /* OrderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableView.h; sourceTree = "<group>"; };
-		EF7C35FD1E12557F00618589 /* OrderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableView.m; sourceTree = "<group>"; };
+		EF7C35F91E12557F00618589 /* OrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderHeaderView.h; path = ../Controller/OrderHeaderView.h; sourceTree = "<group>"; };
+		EF7C35FA1E12557F00618589 /* OrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderHeaderView.m; path = ../Controller/OrderHeaderView.m; sourceTree = "<group>"; };
+		EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderHeaderView.xib; path = ../Controller/OrderHeaderView.xib; sourceTree = "<group>"; };
+		EF7C35FC1E12557F00618589 /* OrderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderTableView.h; path = ../Controller/OrderTableView.h; sourceTree = "<group>"; };
+		EF7C35FD1E12557F00618589 /* OrderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderTableView.m; path = ../Controller/OrderTableView.m; sourceTree = "<group>"; };
 		EFDD078D1E1146C00083C80A /* DianBa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianBa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDD079A1E1146C00083C80A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFDD079C1E1146C00083C80A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -251,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				EF7C35F31E12557F00618589 /* Controller */,
+				EF7C36051E1256CC00618589 /* View */,
 				EF7C35FE1E12557F00618589 /* Model */,
 			);
 			path = Order;
@@ -259,16 +260,8 @@
 		EF7C35F31E12557F00618589 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EF7C35F41E12557F00618589 /* OrderCell.h */,
-				EF7C35F51E12557F00618589 /* OrderCell.m */,
-				EF7C35F61E12557F00618589 /* OrderCell.xib */,
 				EF7C35F71E12557F00618589 /* OrderController.h */,
 				EF7C35F81E12557F00618589 /* OrderController.m */,
-				EF7C35F91E12557F00618589 /* OrderHeaderView.h */,
-				EF7C35FA1E12557F00618589 /* OrderHeaderView.m */,
-				EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */,
-				EF7C35FC1E12557F00618589 /* OrderTableView.h */,
-				EF7C35FD1E12557F00618589 /* OrderTableView.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +271,21 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EF7C36051E1256CC00618589 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C35F41E12557F00618589 /* OrderCell.h */,
+				EF7C35F51E12557F00618589 /* OrderCell.m */,
+				EF7C35F61E12557F00618589 /* OrderCell.xib */,
+				EF7C35F91E12557F00618589 /* OrderHeaderView.h */,
+				EF7C35FA1E12557F00618589 /* OrderHeaderView.m */,
+				EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */,
+				EF7C35FC1E12557F00618589 /* OrderTableView.h */,
+				EF7C35FD1E12557F00618589 /* OrderTableView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EFDD07841E1146C00083C80A = {
