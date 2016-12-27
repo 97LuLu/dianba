@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DCE3201E11FCAC00E6F158 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE31F1E11FCAC00E6F158 /* HomePageViewController.m */; };
+		00DCE3231E11FCB500E6F158 /* TakeOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE3221E11FCB500E6F158 /* TakeOutViewController.m */; };
+		00DCE3261E11FCC100E6F158 /* OrderFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE3251E11FCC100E6F158 /* OrderFormViewController.m */; };
+		00DCE3291E11FCC800E6F158 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE3281E11FCC800E6F158 /* MineViewController.m */; };
+		00DCE32C1E11FD4D00E6F158 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE32B1E11FD4D00E6F158 /* TabBarViewController.m */; };
 		CF01136A59D8393F1EC27771 /* Pods_DianBa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009F053588FA4657C3B60710 /* Pods_DianBa.framework */; };
 		EFDD079B1E1146C00083C80A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD07991E1146C00083C80A /* Main.storyboard */; };
 		EFDD079D1E1146C00083C80A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDD079C1E1146C00083C80A /* Assets.xcassets */; };
@@ -21,6 +26,16 @@
 /* Begin PBXFileReference section */
 		009F053588FA4657C3B60710 /* Pods_DianBa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DianBa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DCE3071E11F5F800E6F158 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		00DCE31E1E11FCAC00E6F158 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		00DCE31F1E11FCAC00E6F158 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		00DCE3211E11FCB500E6F158 /* TakeOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeOutViewController.h; sourceTree = "<group>"; };
+		00DCE3221E11FCB500E6F158 /* TakeOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeOutViewController.m; sourceTree = "<group>"; };
+		00DCE3241E11FCC100E6F158 /* OrderFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFormViewController.h; sourceTree = "<group>"; };
+		00DCE3251E11FCC100E6F158 /* OrderFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFormViewController.m; sourceTree = "<group>"; };
+		00DCE3271E11FCC800E6F158 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		00DCE3281E11FCC800E6F158 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		00DCE32A1E11FD4D00E6F158 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		00DCE32B1E11FD4D00E6F158 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.debug.xcconfig"; sourceTree = "<group>"; };
 		EFDD078D1E1146C00083C80A /* DianBa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianBa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDD079A1E1146C00083C80A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,11 +65,167 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00DCE3081E11F7CE00E6F158 /* New Group */ = {
+		00DCE3081E11F7CE00E6F158 /* Seek */ = {
+			isa = PBXGroup;
+			children = (
+				00DCE30B1E11FAB500E6F158 /* Model */,
+				00DCE30A1E11FAB400E6F158 /* View */,
+				00DCE3091E11FAAF00E6F158 /* Controller */,
+			);
+			name = Seek;
+			sourceTree = "<group>";
+		};
+		00DCE3091E11FAAF00E6F158 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "New Group";
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		00DCE30A1E11FAB400E6F158 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		00DCE30B1E11FAB500E6F158 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		00DCE30D1E11FB3B00E6F158 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				00DCE31D1E11FC6100E6F158 /* Model */,
+				00DCE31C1E11FC6000E6F158 /* View */,
+				00DCE31B1E11FC5E00E6F158 /* Controller */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		00DCE30E1E11FB3C00E6F158 /* Order form */ = {
+			isa = PBXGroup;
+			children = (
+				00DCE31A1E11FC5C00E6F158 /* Model */,
+				00DCE3191E11FC5B00E6F158 /* View */,
+				00DCE3181E11FC5A00E6F158 /* Controller */,
+			);
+			name = "Order form";
+			sourceTree = "<group>";
+		};
+		00DCE30F1E11FB3D00E6F158 /* Take out */ = {
+			isa = PBXGroup;
+			children = (
+				00DCE3171E11FC5700E6F158 /* Model */,
+				00DCE3161E11FC5500E6F158 /* View */,
+				00DCE3151E11FC5300E6F158 /* Controller */,
+			);
+			name = "Take out";
+			sourceTree = "<group>";
+		};
+		00DCE3111E11FB4100E6F158 /* Home page */ = {
+			isa = PBXGroup;
+			children = (
+				00DCE3141E11FC5000E6F158 /* Model */,
+				00DCE3131E11FC4D00E6F158 /* View */,
+				00DCE3121E11FC4B00E6F158 /* Controller */,
+			);
+			name = "Home page";
+			sourceTree = "<group>";
+		};
+		00DCE3121E11FC4B00E6F158 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00DCE31E1E11FCAC00E6F158 /* HomePageViewController.h */,
+				00DCE31F1E11FCAC00E6F158 /* HomePageViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		00DCE3131E11FC4D00E6F158 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		00DCE3141E11FC5000E6F158 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		00DCE3151E11FC5300E6F158 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00DCE3211E11FCB500E6F158 /* TakeOutViewController.h */,
+				00DCE3221E11FCB500E6F158 /* TakeOutViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		00DCE3161E11FC5500E6F158 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		00DCE3171E11FC5700E6F158 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		00DCE3181E11FC5A00E6F158 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00DCE3241E11FCC100E6F158 /* OrderFormViewController.h */,
+				00DCE3251E11FCC100E6F158 /* OrderFormViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		00DCE3191E11FC5B00E6F158 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		00DCE31A1E11FC5C00E6F158 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		00DCE31B1E11FC5E00E6F158 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00DCE3271E11FCC800E6F158 /* MineViewController.h */,
+				00DCE3281E11FCC800E6F158 /* MineViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		00DCE31C1E11FC6000E6F158 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		00DCE31D1E11FC6100E6F158 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		9CC19962003B302C011C8299 /* Frameworks */ = {
@@ -86,6 +257,10 @@
 		EFDD078F1E1146C00083C80A /* DianBa */ = {
 			isa = PBXGroup;
 			children = (
+				00DCE3111E11FB4100E6F158 /* Home page */,
+				00DCE30F1E11FB3D00E6F158 /* Take out */,
+				00DCE30E1E11FB3C00E6F158 /* Order form */,
+				00DCE30D1E11FB3B00E6F158 /* Mine */,
 				EFDD07A71E114D130083C80A /* Class */,
 				EFDD07901E1146C00083C80A /* Supporting Files */,
 			);
@@ -106,7 +281,7 @@
 		EFDD07A71E114D130083C80A /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				00DCE3081E11F7CE00E6F158 /* New Group */,
+				00DCE3081E11F7CE00E6F158 /* Seek */,
 				EFF238031E11EA62005065B1 /* Order */,
 				EFDD07AC1E114D130083C80A /* Other */,
 			);
@@ -119,6 +294,8 @@
 				EFF237FF1E11DF3B005065B1 /* Category */,
 				EFDD07AD1E114D130083C80A /* AppDelegate.h */,
 				EFDD07AE1E114D130083C80A /* AppDelegate.m */,
+				00DCE32A1E11FD4D00E6F158 /* TabBarViewController.h */,
+				00DCE32B1E11FD4D00E6F158 /* TabBarViewController.m */,
 				EFDD07AF1E114D130083C80A /* main.m */,
 				00DCE3071E11F5F800E6F158 /* PrefixHeader.pch */,
 			);
@@ -302,8 +479,13 @@
 			files = (
 				EFF2380A1E11EA98005065B1 /* OrderController.m in Sources */,
 				EFDD07B51E114D130083C80A /* main.m in Sources */,
+				00DCE3231E11FCB500E6F158 /* TakeOutViewController.m in Sources */,
+				00DCE3261E11FCC100E6F158 /* OrderFormViewController.m in Sources */,
+				00DCE3201E11FCAC00E6F158 /* HomePageViewController.m in Sources */,
 				EFDD07B41E114D130083C80A /* AppDelegate.m in Sources */,
 				EFF238021E11DF44005065B1 /* UIImage+ImageEffects.m in Sources */,
+				00DCE32C1E11FD4D00E6F158 /* TabBarViewController.m in Sources */,
+				00DCE3291E11FCC800E6F158 /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
