@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		009F053588FA4657C3B60710 /* Pods_DianBa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DianBa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DCE3071E11F5F800E6F158 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.debug.xcconfig"; sourceTree = "<group>"; };
 		EFDD078D1E1146C00083C80A /* DianBa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianBa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDD079A1E1146C00083C80A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DCE3081E11F7CE00E6F158 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		9CC19962003B302C011C8299 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +106,7 @@
 		EFDD07A71E114D130083C80A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				00DCE3081E11F7CE00E6F158 /* New Group */,
 				EFF238031E11EA62005065B1 /* Order */,
 				EFDD07AC1E114D130083C80A /* Other */,
 			);
@@ -111,6 +120,7 @@
 				EFDD07AD1E114D130083C80A /* AppDelegate.h */,
 				EFDD07AE1E114D130083C80A /* AppDelegate.m */,
 				EFDD07AF1E114D130083C80A /* main.m */,
+				00DCE3071E11F5F800E6F158 /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -412,6 +422,8 @@
 			baseConfigurationReference = 7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DianBa/Class/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = DianBa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangchenlu.www.DianBa;
@@ -424,6 +436,8 @@
 			baseConfigurationReference = F67FBD5FF06BEE3427429983 /* Pods-DianBa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DianBa/Class/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = DianBa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangchenlu.www.DianBa;
