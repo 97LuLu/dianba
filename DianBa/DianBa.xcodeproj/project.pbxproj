@@ -13,18 +13,20 @@
 		00DCE3291E11FCC800E6F158 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE3281E11FCC800E6F158 /* MineViewController.m */; };
 		00DCE32C1E11FD4D00E6F158 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE32B1E11FD4D00E6F158 /* TabBarViewController.m */; };
 		CF01136A59D8393F1EC27771 /* Pods_DianBa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009F053588FA4657C3B60710 /* Pods_DianBa.framework */; };
-		EF7C35FF1E12557F00618589 /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C35F51E12557F00618589 /* OrderCell.m */; };
-		EF7C36001E12557F00618589 /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7C35F61E12557F00618589 /* OrderCell.xib */; };
-		EF7C36011E12557F00618589 /* OrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C35F81E12557F00618589 /* OrderController.m */; };
-		EF7C36021E12557F00618589 /* OrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C35FA1E12557F00618589 /* OrderHeaderView.m */; };
-		EF7C36031E12557F00618589 /* OrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */; };
-		EF7C36041E12557F00618589 /* OrderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C35FD1E12557F00618589 /* OrderTableView.m */; };
+		EF7C36B91E12643900618589 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7C36091E12643900618589 /* libGPUImage.a */; };
+		EF7C36BF1E1283CE00618589 /* OrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C36BD1E1283CE00618589 /* OrderController.m */; };
+		EF7C36CA1E1299F700618589 /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C36C31E1299F700618589 /* OrderCell.m */; };
+		EF7C36CB1E1299F700618589 /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7C36C41E1299F700618589 /* OrderCell.xib */; };
+		EF7C36CC1E1299F700618589 /* OrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C36C61E1299F700618589 /* OrderHeaderView.m */; };
+		EF7C36CD1E1299F700618589 /* OrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7C36C71E1299F700618589 /* OrderHeaderView.xib */; };
+		EF7C36CE1E1299F700618589 /* OrderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C36C91E1299F700618589 /* OrderTableView.m */; };
+		EF7C36D91E12A73C00618589 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C36D81E12A73C00618589 /* UIImage+Image.m */; };
+		EF7C36DC1E12A7EA00618589 /* UIBarButtonItem+BarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C36DB1E12A7EA00618589 /* UIBarButtonItem+BarButtonItem.m */; };
 		EFDD079B1E1146C00083C80A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD07991E1146C00083C80A /* Main.storyboard */; };
 		EFDD079D1E1146C00083C80A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDD079C1E1146C00083C80A /* Assets.xcassets */; };
 		EFDD07A01E1146C00083C80A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD079E1E1146C00083C80A /* LaunchScreen.storyboard */; };
 		EFDD07B41E114D130083C80A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDD07AE1E114D130083C80A /* AppDelegate.m */; };
 		EFDD07B51E114D130083C80A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDD07AF1E114D130083C80A /* main.m */; };
-		EFF238021E11DF44005065B1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF238011E11DF44005065B1 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,16 +43,193 @@
 		00DCE32A1E11FD4D00E6F158 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		00DCE32B1E11FD4D00E6F158 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.debug.xcconfig"; sourceTree = "<group>"; };
-		EF7C35F41E12557F00618589 /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderCell.h; path = ../Controller/OrderCell.h; sourceTree = "<group>"; };
-		EF7C35F51E12557F00618589 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderCell.m; path = ../Controller/OrderCell.m; sourceTree = "<group>"; };
-		EF7C35F61E12557F00618589 /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderCell.xib; path = ../Controller/OrderCell.xib; sourceTree = "<group>"; };
-		EF7C35F71E12557F00618589 /* OrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderController.h; sourceTree = "<group>"; };
-		EF7C35F81E12557F00618589 /* OrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderController.m; sourceTree = "<group>"; };
-		EF7C35F91E12557F00618589 /* OrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderHeaderView.h; path = ../Controller/OrderHeaderView.h; sourceTree = "<group>"; };
-		EF7C35FA1E12557F00618589 /* OrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderHeaderView.m; path = ../Controller/OrderHeaderView.m; sourceTree = "<group>"; };
-		EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderHeaderView.xib; path = ../Controller/OrderHeaderView.xib; sourceTree = "<group>"; };
-		EF7C35FC1E12557F00618589 /* OrderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderTableView.h; path = ../Controller/OrderTableView.h; sourceTree = "<group>"; };
-		EF7C35FD1E12557F00618589 /* OrderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderTableView.m; path = ../Controller/OrderTableView.m; sourceTree = "<group>"; };
+		EF7C36091E12643900618589 /* libGPUImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGPUImage.a; sourceTree = "<group>"; };
+		EF7C360D1E12643900618589 /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
+		EF7C360E1E12643900618589 /* GPUImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImage.h; sourceTree = "<group>"; };
+		EF7C360F1E12643900618589 /* GPUImage3x3ConvolutionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImage3x3ConvolutionFilter.h; sourceTree = "<group>"; };
+		EF7C36101E12643900618589 /* GPUImage3x3TextureSamplingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImage3x3TextureSamplingFilter.h; sourceTree = "<group>"; };
+		EF7C36111E12643900618589 /* GPUImageAdaptiveThresholdFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageAdaptiveThresholdFilter.h; sourceTree = "<group>"; };
+		EF7C36121E12643900618589 /* GPUImageAddBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageAddBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36131E12643900618589 /* GPUImageAlphaBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageAlphaBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36141E12643900618589 /* GPUImageAmatorkaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageAmatorkaFilter.h; sourceTree = "<group>"; };
+		EF7C36151E12643900618589 /* GPUImageAverageColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageAverageColor.h; sourceTree = "<group>"; };
+		EF7C36161E12643900618589 /* GPUImageAverageLuminanceThresholdFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageAverageLuminanceThresholdFilter.h; sourceTree = "<group>"; };
+		EF7C36171E12643900618589 /* GPUImageBilateralFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBilateralFilter.h; sourceTree = "<group>"; };
+		EF7C36181E12643900618589 /* GPUImageBoxBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBoxBlurFilter.h; sourceTree = "<group>"; };
+		EF7C36191E12643900618589 /* GPUImageBrightnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBrightnessFilter.h; sourceTree = "<group>"; };
+		EF7C361A1E12643900618589 /* GPUImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBuffer.h; sourceTree = "<group>"; };
+		EF7C361B1E12643900618589 /* GPUImageBulgeDistortionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBulgeDistortionFilter.h; sourceTree = "<group>"; };
+		EF7C361C1E12643900618589 /* GPUImageCannyEdgeDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageCannyEdgeDetectionFilter.h; sourceTree = "<group>"; };
+		EF7C361D1E12643900618589 /* GPUImageCGAColorspaceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageCGAColorspaceFilter.h; sourceTree = "<group>"; };
+		EF7C361E1E12643900618589 /* GPUImageChromaKeyBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageChromaKeyBlendFilter.h; sourceTree = "<group>"; };
+		EF7C361F1E12643900618589 /* GPUImageChromaKeyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageChromaKeyFilter.h; sourceTree = "<group>"; };
+		EF7C36201E12643900618589 /* GPUImageClosingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageClosingFilter.h; sourceTree = "<group>"; };
+		EF7C36211E12643900618589 /* GPUImageColorBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColorBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36221E12643900618589 /* GPUImageColorBurnBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColorBurnBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36231E12643900618589 /* GPUImageColorConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColorConversion.h; sourceTree = "<group>"; };
+		EF7C36241E12643900618589 /* GPUImageColorDodgeBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColorDodgeBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36251E12643900618589 /* GPUImageColorInvertFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColorInvertFilter.h; sourceTree = "<group>"; };
+		EF7C36261E12643900618589 /* GPUImageColorLocalBinaryPatternFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColorLocalBinaryPatternFilter.h; sourceTree = "<group>"; };
+		EF7C36271E12643900618589 /* GPUImageColorMatrixFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColorMatrixFilter.h; sourceTree = "<group>"; };
+		EF7C36281E12643900618589 /* GPUImageColorPackingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColorPackingFilter.h; sourceTree = "<group>"; };
+		EF7C36291E12643900618589 /* GPUImageColourFASTFeatureDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColourFASTFeatureDetector.h; sourceTree = "<group>"; };
+		EF7C362A1E12643900618589 /* GPUImageColourFASTSamplingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageColourFASTSamplingOperation.h; sourceTree = "<group>"; };
+		EF7C362B1E12643900618589 /* GPUImageContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageContext.h; sourceTree = "<group>"; };
+		EF7C362C1E12643900618589 /* GPUImageContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageContrastFilter.h; sourceTree = "<group>"; };
+		EF7C362D1E12643900618589 /* GPUImageCropFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageCropFilter.h; sourceTree = "<group>"; };
+		EF7C362E1E12643900618589 /* GPUImageCrosshairGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageCrosshairGenerator.h; sourceTree = "<group>"; };
+		EF7C362F1E12643900618589 /* GPUImageCrosshatchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageCrosshatchFilter.h; sourceTree = "<group>"; };
+		EF7C36301E12643900618589 /* GPUImageDarkenBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDarkenBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36311E12643900618589 /* GPUImageDifferenceBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDifferenceBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36321E12643900618589 /* GPUImageDilationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDilationFilter.h; sourceTree = "<group>"; };
+		EF7C36331E12643900618589 /* GPUImageDirectionalNonMaximumSuppressionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDirectionalNonMaximumSuppressionFilter.h; sourceTree = "<group>"; };
+		EF7C36341E12643900618589 /* GPUImageDirectionalSobelEdgeDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDirectionalSobelEdgeDetectionFilter.h; sourceTree = "<group>"; };
+		EF7C36351E12643900618589 /* GPUImageDissolveBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDissolveBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36361E12643900618589 /* GPUImageDivideBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDivideBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36371E12643900618589 /* GPUImageEmbossFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageEmbossFilter.h; sourceTree = "<group>"; };
+		EF7C36381E12643900618589 /* GPUImageErosionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageErosionFilter.h; sourceTree = "<group>"; };
+		EF7C36391E12643900618589 /* GPUImageExclusionBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageExclusionBlendFilter.h; sourceTree = "<group>"; };
+		EF7C363A1E12643900618589 /* GPUImageExposureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageExposureFilter.h; sourceTree = "<group>"; };
+		EF7C363B1E12643900618589 /* GPUImageFalseColorFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFalseColorFilter.h; sourceTree = "<group>"; };
+		EF7C363C1E12643900618589 /* GPUImageFASTCornerDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFASTCornerDetectionFilter.h; sourceTree = "<group>"; };
+		EF7C363D1E12643900618589 /* GPUImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFilter.h; sourceTree = "<group>"; };
+		EF7C363E1E12643900618589 /* GPUImageFilterGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFilterGroup.h; sourceTree = "<group>"; };
+		EF7C363F1E12643900618589 /* GPUImageFilterPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFilterPipeline.h; sourceTree = "<group>"; };
+		EF7C36401E12643900618589 /* GPUImageFourInputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFourInputFilter.h; sourceTree = "<group>"; };
+		EF7C36411E12643900618589 /* GPUImageFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFramebuffer.h; sourceTree = "<group>"; };
+		EF7C36421E12643900618589 /* GPUImageFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFramebufferCache.h; sourceTree = "<group>"; };
+		EF7C36431E12643900618589 /* GPUImageFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFramework.h; sourceTree = "<group>"; };
+		EF7C36441E12643900618589 /* GPUImageGammaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageGammaFilter.h; sourceTree = "<group>"; };
+		EF7C36451E12643900618589 /* GPUImageGaussianBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageGaussianBlurFilter.h; sourceTree = "<group>"; };
+		EF7C36461E12643900618589 /* GPUImageGaussianBlurPositionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageGaussianBlurPositionFilter.h; sourceTree = "<group>"; };
+		EF7C36471E12643900618589 /* GPUImageGaussianSelectiveBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageGaussianSelectiveBlurFilter.h; sourceTree = "<group>"; };
+		EF7C36481E12643900618589 /* GPUImageGlassSphereFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageGlassSphereFilter.h; sourceTree = "<group>"; };
+		EF7C36491E12643900618589 /* GPUImageGrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageGrayscaleFilter.h; sourceTree = "<group>"; };
+		EF7C364A1E12643900618589 /* GPUImageHalftoneFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHalftoneFilter.h; sourceTree = "<group>"; };
+		EF7C364B1E12643900618589 /* GPUImageHardLightBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHardLightBlendFilter.h; sourceTree = "<group>"; };
+		EF7C364C1E12643900618589 /* GPUImageHarrisCornerDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHarrisCornerDetectionFilter.h; sourceTree = "<group>"; };
+		EF7C364D1E12643900618589 /* GPUImageHazeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHazeFilter.h; sourceTree = "<group>"; };
+		EF7C364E1E12643900618589 /* GPUImageHighlightShadowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHighlightShadowFilter.h; sourceTree = "<group>"; };
+		EF7C364F1E12643900618589 /* GPUImageHighPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHighPassFilter.h; sourceTree = "<group>"; };
+		EF7C36501E12643900618589 /* GPUImageHistogramEqualizationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHistogramEqualizationFilter.h; sourceTree = "<group>"; };
+		EF7C36511E12643900618589 /* GPUImageHistogramFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHistogramFilter.h; sourceTree = "<group>"; };
+		EF7C36521E12643900618589 /* GPUImageHistogramGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHistogramGenerator.h; sourceTree = "<group>"; };
+		EF7C36531E12643900618589 /* GPUImageHoughTransformLineDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHoughTransformLineDetector.h; sourceTree = "<group>"; };
+		EF7C36541E12643900618589 /* GPUImageHSBFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHSBFilter.h; sourceTree = "<group>"; };
+		EF7C36551E12643900618589 /* GPUImageHueBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHueBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36561E12643900618589 /* GPUImageHueFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHueFilter.h; sourceTree = "<group>"; };
+		EF7C36571E12643900618589 /* GPUImageiOSBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageiOSBlurFilter.h; sourceTree = "<group>"; };
+		EF7C36581E12643900618589 /* GPUImageJFAVoronoiFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageJFAVoronoiFilter.h; sourceTree = "<group>"; };
+		EF7C36591E12643900618589 /* GPUImageKuwaharaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageKuwaharaFilter.h; sourceTree = "<group>"; };
+		EF7C365A1E12643900618589 /* GPUImageKuwaharaRadius3Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageKuwaharaRadius3Filter.h; sourceTree = "<group>"; };
+		EF7C365B1E12643900618589 /* GPUImageLanczosResamplingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLanczosResamplingFilter.h; sourceTree = "<group>"; };
+		EF7C365C1E12643900618589 /* GPUImageLaplacianFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLaplacianFilter.h; sourceTree = "<group>"; };
+		EF7C365D1E12643900618589 /* GPUImageLevelsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLevelsFilter.h; sourceTree = "<group>"; };
+		EF7C365E1E12643900618589 /* GPUImageLightenBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLightenBlendFilter.h; sourceTree = "<group>"; };
+		EF7C365F1E12643900618589 /* GPUImageLinearBurnBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLinearBurnBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36601E12643900618589 /* GPUImageLineGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLineGenerator.h; sourceTree = "<group>"; };
+		EF7C36611E12643900618589 /* GPUImageLocalBinaryPatternFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLocalBinaryPatternFilter.h; sourceTree = "<group>"; };
+		EF7C36621E12643900618589 /* GPUImageLookupFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLookupFilter.h; sourceTree = "<group>"; };
+		EF7C36631E12643900618589 /* GPUImageLowPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLowPassFilter.h; sourceTree = "<group>"; };
+		EF7C36641E12643900618589 /* GPUImageLuminanceRangeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLuminanceRangeFilter.h; sourceTree = "<group>"; };
+		EF7C36651E12643900618589 /* GPUImageLuminanceThresholdFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLuminanceThresholdFilter.h; sourceTree = "<group>"; };
+		EF7C36661E12643900618589 /* GPUImageLuminosity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLuminosity.h; sourceTree = "<group>"; };
+		EF7C36671E12643900618589 /* GPUImageLuminosityBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLuminosityBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36681E12643900618589 /* GPUImageMaskFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMaskFilter.h; sourceTree = "<group>"; };
+		EF7C36691E12643900618589 /* GPUImageMedianFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMedianFilter.h; sourceTree = "<group>"; };
+		EF7C366A1E12643900618589 /* GPUImageMissEtikateFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMissEtikateFilter.h; sourceTree = "<group>"; };
+		EF7C366B1E12643900618589 /* GPUImageMonochromeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMonochromeFilter.h; sourceTree = "<group>"; };
+		EF7C366C1E12643900618589 /* GPUImageMosaicFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMosaicFilter.h; sourceTree = "<group>"; };
+		EF7C366D1E12643900618589 /* GPUImageMotionBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMotionBlurFilter.h; sourceTree = "<group>"; };
+		EF7C366E1E12643900618589 /* GPUImageMotionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMotionDetector.h; sourceTree = "<group>"; };
+		EF7C366F1E12643900618589 /* GPUImageMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMovie.h; sourceTree = "<group>"; };
+		EF7C36701E12643900618589 /* GPUImageMovieComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMovieComposition.h; sourceTree = "<group>"; };
+		EF7C36711E12643900618589 /* GPUImageMovieWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMovieWriter.h; sourceTree = "<group>"; };
+		EF7C36721E12643900618589 /* GPUImageMultiplyBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMultiplyBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36731E12643900618589 /* GPUImageNobleCornerDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageNobleCornerDetectionFilter.h; sourceTree = "<group>"; };
+		EF7C36741E12643900618589 /* GPUImageNonMaximumSuppressionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageNonMaximumSuppressionFilter.h; sourceTree = "<group>"; };
+		EF7C36751E12643900618589 /* GPUImageNormalBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageNormalBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36761E12643900618589 /* GPUImageOpacityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageOpacityFilter.h; sourceTree = "<group>"; };
+		EF7C36771E12643900618589 /* GPUImageOpeningFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageOpeningFilter.h; sourceTree = "<group>"; };
+		EF7C36781E12643900618589 /* GPUImageOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageOutput.h; sourceTree = "<group>"; };
+		EF7C36791E12643900618589 /* GPUImageOverlayBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageOverlayBlendFilter.h; sourceTree = "<group>"; };
+		EF7C367A1E12643900618589 /* GPUImageParallelCoordinateLineTransformFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageParallelCoordinateLineTransformFilter.h; sourceTree = "<group>"; };
+		EF7C367B1E12643900618589 /* GPUImagePerlinNoiseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePerlinNoiseFilter.h; sourceTree = "<group>"; };
+		EF7C367C1E12643900618589 /* GPUImagePicture+TextureSubimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GPUImagePicture+TextureSubimage.h"; sourceTree = "<group>"; };
+		EF7C367D1E12643900618589 /* GPUImagePicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePicture.h; sourceTree = "<group>"; };
+		EF7C367E1E12643900618589 /* GPUImagePinchDistortionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePinchDistortionFilter.h; sourceTree = "<group>"; };
+		EF7C367F1E12643900618589 /* GPUImagePixellateFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePixellateFilter.h; sourceTree = "<group>"; };
+		EF7C36801E12643900618589 /* GPUImagePixellatePositionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePixellatePositionFilter.h; sourceTree = "<group>"; };
+		EF7C36811E12643900618589 /* GPUImagePoissonBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePoissonBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36821E12643900618589 /* GPUImagePolarPixellateFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePolarPixellateFilter.h; sourceTree = "<group>"; };
+		EF7C36831E12643900618589 /* GPUImagePolkaDotFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePolkaDotFilter.h; sourceTree = "<group>"; };
+		EF7C36841E12643900618589 /* GPUImagePosterizeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePosterizeFilter.h; sourceTree = "<group>"; };
+		EF7C36851E12643900618589 /* GPUImagePrewittEdgeDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImagePrewittEdgeDetectionFilter.h; sourceTree = "<group>"; };
+		EF7C36861E12643900618589 /* GPUImageRawDataInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRawDataInput.h; sourceTree = "<group>"; };
+		EF7C36871E12643900618589 /* GPUImageRawDataOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRawDataOutput.h; sourceTree = "<group>"; };
+		EF7C36881E12643900618589 /* GPUImageRGBClosingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRGBClosingFilter.h; sourceTree = "<group>"; };
+		EF7C36891E12643900618589 /* GPUImageRGBDilationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRGBDilationFilter.h; sourceTree = "<group>"; };
+		EF7C368A1E12643900618589 /* GPUImageRGBErosionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRGBErosionFilter.h; sourceTree = "<group>"; };
+		EF7C368B1E12643900618589 /* GPUImageRGBFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRGBFilter.h; sourceTree = "<group>"; };
+		EF7C368C1E12643900618589 /* GPUImageRGBOpeningFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRGBOpeningFilter.h; sourceTree = "<group>"; };
+		EF7C368D1E12643900618589 /* GPUImageSaturationBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSaturationBlendFilter.h; sourceTree = "<group>"; };
+		EF7C368E1E12643900618589 /* GPUImageSaturationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSaturationFilter.h; sourceTree = "<group>"; };
+		EF7C368F1E12643900618589 /* GPUImageScreenBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageScreenBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36901E12643900618589 /* GPUImageSepiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSepiaFilter.h; sourceTree = "<group>"; };
+		EF7C36911E12643900618589 /* GPUImageSharpenFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSharpenFilter.h; sourceTree = "<group>"; };
+		EF7C36921E12643900618589 /* GPUImageShiTomasiFeatureDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageShiTomasiFeatureDetectionFilter.h; sourceTree = "<group>"; };
+		EF7C36931E12643900618589 /* GPUImageSingleComponentGaussianBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSingleComponentGaussianBlurFilter.h; sourceTree = "<group>"; };
+		EF7C36941E12643900618589 /* GPUImageSketchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSketchFilter.h; sourceTree = "<group>"; };
+		EF7C36951E12643900618589 /* GPUImageSmoothToonFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSmoothToonFilter.h; sourceTree = "<group>"; };
+		EF7C36961E12643900618589 /* GPUImageSobelEdgeDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSobelEdgeDetectionFilter.h; sourceTree = "<group>"; };
+		EF7C36971E12643900618589 /* GPUImageSoftEleganceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSoftEleganceFilter.h; sourceTree = "<group>"; };
+		EF7C36981E12643900618589 /* GPUImageSoftLightBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSoftLightBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36991E12643900618589 /* GPUImageSolarizeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSolarizeFilter.h; sourceTree = "<group>"; };
+		EF7C369A1E12643900618589 /* GPUImageSolidColorGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSolidColorGenerator.h; sourceTree = "<group>"; };
+		EF7C369B1E12643900618589 /* GPUImageSourceOverBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSourceOverBlendFilter.h; sourceTree = "<group>"; };
+		EF7C369C1E12643900618589 /* GPUImageSphereRefractionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSphereRefractionFilter.h; sourceTree = "<group>"; };
+		EF7C369D1E12643900618589 /* GPUImageStillCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageStillCamera.h; sourceTree = "<group>"; };
+		EF7C369E1E12643900618589 /* GPUImageStretchDistortionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageStretchDistortionFilter.h; sourceTree = "<group>"; };
+		EF7C369F1E12643900618589 /* GPUImageSubtractBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSubtractBlendFilter.h; sourceTree = "<group>"; };
+		EF7C36A01E12643900618589 /* GPUImageSwirlFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSwirlFilter.h; sourceTree = "<group>"; };
+		EF7C36A11E12643900618589 /* GPUImageTextureInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageTextureInput.h; sourceTree = "<group>"; };
+		EF7C36A21E12643900618589 /* GPUImageTextureOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageTextureOutput.h; sourceTree = "<group>"; };
+		EF7C36A31E12643900618589 /* GPUImageThreeInputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageThreeInputFilter.h; sourceTree = "<group>"; };
+		EF7C36A41E12643900618589 /* GPUImageThresholdEdgeDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageThresholdEdgeDetectionFilter.h; sourceTree = "<group>"; };
+		EF7C36A51E12643900618589 /* GPUImageThresholdedNonMaximumSuppressionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageThresholdedNonMaximumSuppressionFilter.h; sourceTree = "<group>"; };
+		EF7C36A61E12643900618589 /* GPUImageThresholdSketchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageThresholdSketchFilter.h; sourceTree = "<group>"; };
+		EF7C36A71E12643900618589 /* GPUImageTiltShiftFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageTiltShiftFilter.h; sourceTree = "<group>"; };
+		EF7C36A81E12643900618589 /* GPUImageToneCurveFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageToneCurveFilter.h; sourceTree = "<group>"; };
+		EF7C36A91E12643900618589 /* GPUImageToonFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageToonFilter.h; sourceTree = "<group>"; };
+		EF7C36AA1E12643900618589 /* GPUImageTransformFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageTransformFilter.h; sourceTree = "<group>"; };
+		EF7C36AB1E12643900618589 /* GPUImageTwoInputCrossTextureSamplingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageTwoInputCrossTextureSamplingFilter.h; sourceTree = "<group>"; };
+		EF7C36AC1E12643900618589 /* GPUImageTwoInputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageTwoInputFilter.h; sourceTree = "<group>"; };
+		EF7C36AD1E12643900618589 /* GPUImageTwoPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageTwoPassFilter.h; sourceTree = "<group>"; };
+		EF7C36AE1E12643900618589 /* GPUImageTwoPassTextureSamplingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageTwoPassTextureSamplingFilter.h; sourceTree = "<group>"; };
+		EF7C36AF1E12643900618589 /* GPUImageUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageUIElement.h; sourceTree = "<group>"; };
+		EF7C36B01E12643900618589 /* GPUImageUnsharpMaskFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageUnsharpMaskFilter.h; sourceTree = "<group>"; };
+		EF7C36B11E12643900618589 /* GPUImageVideoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageVideoCamera.h; sourceTree = "<group>"; };
+		EF7C36B21E12643900618589 /* GPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageView.h; sourceTree = "<group>"; };
+		EF7C36B31E12643900618589 /* GPUImageVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageVignetteFilter.h; sourceTree = "<group>"; };
+		EF7C36B41E12643900618589 /* GPUImageVoronoiConsumerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageVoronoiConsumerFilter.h; sourceTree = "<group>"; };
+		EF7C36B51E12643900618589 /* GPUImageWeakPixelInclusionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageWeakPixelInclusionFilter.h; sourceTree = "<group>"; };
+		EF7C36B61E12643900618589 /* GPUImageWhiteBalanceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageWhiteBalanceFilter.h; sourceTree = "<group>"; };
+		EF7C36B71E12643900618589 /* GPUImageXYDerivativeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageXYDerivativeFilter.h; sourceTree = "<group>"; };
+		EF7C36B81E12643900618589 /* GPUImageZoomBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageZoomBlurFilter.h; sourceTree = "<group>"; };
+		EF7C36BC1E1283CE00618589 /* OrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderController.h; sourceTree = "<group>"; };
+		EF7C36BD1E1283CE00618589 /* OrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderController.m; sourceTree = "<group>"; };
+		EF7C36C21E1299F700618589 /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
+		EF7C36C31E1299F700618589 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
+		EF7C36C41E1299F700618589 /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		EF7C36C51E1299F700618589 /* OrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHeaderView.h; sourceTree = "<group>"; };
+		EF7C36C61E1299F700618589 /* OrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHeaderView.m; sourceTree = "<group>"; };
+		EF7C36C71E1299F700618589 /* OrderHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderHeaderView.xib; sourceTree = "<group>"; };
+		EF7C36C81E1299F700618589 /* OrderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableView.h; sourceTree = "<group>"; };
+		EF7C36C91E1299F700618589 /* OrderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableView.m; sourceTree = "<group>"; };
+		EF7C36D71E12A73C00618589 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		EF7C36D81E12A73C00618589 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		EF7C36DA1E12A7EA00618589 /* UIBarButtonItem+BarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BarButtonItem.h"; sourceTree = "<group>"; };
+		EF7C36DB1E12A7EA00618589 /* UIBarButtonItem+BarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BarButtonItem.m"; sourceTree = "<group>"; };
 		EFDD078D1E1146C00083C80A /* DianBa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianBa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDD079A1E1146C00083C80A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFDD079C1E1146C00083C80A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,8 +238,6 @@
 		EFDD07AD1E114D130083C80A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFDD07AE1E114D130083C80A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EFDD07AF1E114D130083C80A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EFF238001E11DF44005065B1 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		EFF238011E11DF44005065B1 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		F67FBD5FF06BEE3427429983 /* Pods-DianBa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.release.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7C36B91E12643900618589 /* libGPUImage.a in Frameworks */,
 				CF01136A59D8393F1EC27771 /* Pods_DianBa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				EF7C35F31E12557F00618589 /* Controller */,
-				EF7C36051E1256CC00618589 /* View */,
+				EF7C36C11E1299F700618589 /* View */,
 				EF7C35FE1E12557F00618589 /* Model */,
 			);
 			path = Order;
@@ -260,8 +438,8 @@
 		EF7C35F31E12557F00618589 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EF7C35F71E12557F00618589 /* OrderController.h */,
-				EF7C35F81E12557F00618589 /* OrderController.m */,
+				EF7C36BC1E1283CE00618589 /* OrderController.h */,
+				EF7C36BD1E1283CE00618589 /* OrderController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,17 +451,221 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EF7C36051E1256CC00618589 /* View */ = {
+		EF7C36081E12642800618589 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				EF7C35F41E12557F00618589 /* OrderCell.h */,
-				EF7C35F51E12557F00618589 /* OrderCell.m */,
-				EF7C35F61E12557F00618589 /* OrderCell.xib */,
-				EF7C35F91E12557F00618589 /* OrderHeaderView.h */,
-				EF7C35FA1E12557F00618589 /* OrderHeaderView.m */,
-				EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */,
-				EF7C35FC1E12557F00618589 /* OrderTableView.h */,
-				EF7C35FD1E12557F00618589 /* OrderTableView.m */,
+				EF7C36091E12643900618589 /* libGPUImage.a */,
+				EF7C360A1E12643900618589 /* usr */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		EF7C360A1E12643900618589 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C360B1E12643900618589 /* local */,
+			);
+			path = usr;
+			sourceTree = "<group>";
+		};
+		EF7C360B1E12643900618589 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C360C1E12643900618589 /* include */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		EF7C360C1E12643900618589 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C360D1E12643900618589 /* GLProgram.h */,
+				EF7C360E1E12643900618589 /* GPUImage.h */,
+				EF7C360F1E12643900618589 /* GPUImage3x3ConvolutionFilter.h */,
+				EF7C36101E12643900618589 /* GPUImage3x3TextureSamplingFilter.h */,
+				EF7C36111E12643900618589 /* GPUImageAdaptiveThresholdFilter.h */,
+				EF7C36121E12643900618589 /* GPUImageAddBlendFilter.h */,
+				EF7C36131E12643900618589 /* GPUImageAlphaBlendFilter.h */,
+				EF7C36141E12643900618589 /* GPUImageAmatorkaFilter.h */,
+				EF7C36151E12643900618589 /* GPUImageAverageColor.h */,
+				EF7C36161E12643900618589 /* GPUImageAverageLuminanceThresholdFilter.h */,
+				EF7C36171E12643900618589 /* GPUImageBilateralFilter.h */,
+				EF7C36181E12643900618589 /* GPUImageBoxBlurFilter.h */,
+				EF7C36191E12643900618589 /* GPUImageBrightnessFilter.h */,
+				EF7C361A1E12643900618589 /* GPUImageBuffer.h */,
+				EF7C361B1E12643900618589 /* GPUImageBulgeDistortionFilter.h */,
+				EF7C361C1E12643900618589 /* GPUImageCannyEdgeDetectionFilter.h */,
+				EF7C361D1E12643900618589 /* GPUImageCGAColorspaceFilter.h */,
+				EF7C361E1E12643900618589 /* GPUImageChromaKeyBlendFilter.h */,
+				EF7C361F1E12643900618589 /* GPUImageChromaKeyFilter.h */,
+				EF7C36201E12643900618589 /* GPUImageClosingFilter.h */,
+				EF7C36211E12643900618589 /* GPUImageColorBlendFilter.h */,
+				EF7C36221E12643900618589 /* GPUImageColorBurnBlendFilter.h */,
+				EF7C36231E12643900618589 /* GPUImageColorConversion.h */,
+				EF7C36241E12643900618589 /* GPUImageColorDodgeBlendFilter.h */,
+				EF7C36251E12643900618589 /* GPUImageColorInvertFilter.h */,
+				EF7C36261E12643900618589 /* GPUImageColorLocalBinaryPatternFilter.h */,
+				EF7C36271E12643900618589 /* GPUImageColorMatrixFilter.h */,
+				EF7C36281E12643900618589 /* GPUImageColorPackingFilter.h */,
+				EF7C36291E12643900618589 /* GPUImageColourFASTFeatureDetector.h */,
+				EF7C362A1E12643900618589 /* GPUImageColourFASTSamplingOperation.h */,
+				EF7C362B1E12643900618589 /* GPUImageContext.h */,
+				EF7C362C1E12643900618589 /* GPUImageContrastFilter.h */,
+				EF7C362D1E12643900618589 /* GPUImageCropFilter.h */,
+				EF7C362E1E12643900618589 /* GPUImageCrosshairGenerator.h */,
+				EF7C362F1E12643900618589 /* GPUImageCrosshatchFilter.h */,
+				EF7C36301E12643900618589 /* GPUImageDarkenBlendFilter.h */,
+				EF7C36311E12643900618589 /* GPUImageDifferenceBlendFilter.h */,
+				EF7C36321E12643900618589 /* GPUImageDilationFilter.h */,
+				EF7C36331E12643900618589 /* GPUImageDirectionalNonMaximumSuppressionFilter.h */,
+				EF7C36341E12643900618589 /* GPUImageDirectionalSobelEdgeDetectionFilter.h */,
+				EF7C36351E12643900618589 /* GPUImageDissolveBlendFilter.h */,
+				EF7C36361E12643900618589 /* GPUImageDivideBlendFilter.h */,
+				EF7C36371E12643900618589 /* GPUImageEmbossFilter.h */,
+				EF7C36381E12643900618589 /* GPUImageErosionFilter.h */,
+				EF7C36391E12643900618589 /* GPUImageExclusionBlendFilter.h */,
+				EF7C363A1E12643900618589 /* GPUImageExposureFilter.h */,
+				EF7C363B1E12643900618589 /* GPUImageFalseColorFilter.h */,
+				EF7C363C1E12643900618589 /* GPUImageFASTCornerDetectionFilter.h */,
+				EF7C363D1E12643900618589 /* GPUImageFilter.h */,
+				EF7C363E1E12643900618589 /* GPUImageFilterGroup.h */,
+				EF7C363F1E12643900618589 /* GPUImageFilterPipeline.h */,
+				EF7C36401E12643900618589 /* GPUImageFourInputFilter.h */,
+				EF7C36411E12643900618589 /* GPUImageFramebuffer.h */,
+				EF7C36421E12643900618589 /* GPUImageFramebufferCache.h */,
+				EF7C36431E12643900618589 /* GPUImageFramework.h */,
+				EF7C36441E12643900618589 /* GPUImageGammaFilter.h */,
+				EF7C36451E12643900618589 /* GPUImageGaussianBlurFilter.h */,
+				EF7C36461E12643900618589 /* GPUImageGaussianBlurPositionFilter.h */,
+				EF7C36471E12643900618589 /* GPUImageGaussianSelectiveBlurFilter.h */,
+				EF7C36481E12643900618589 /* GPUImageGlassSphereFilter.h */,
+				EF7C36491E12643900618589 /* GPUImageGrayscaleFilter.h */,
+				EF7C364A1E12643900618589 /* GPUImageHalftoneFilter.h */,
+				EF7C364B1E12643900618589 /* GPUImageHardLightBlendFilter.h */,
+				EF7C364C1E12643900618589 /* GPUImageHarrisCornerDetectionFilter.h */,
+				EF7C364D1E12643900618589 /* GPUImageHazeFilter.h */,
+				EF7C364E1E12643900618589 /* GPUImageHighlightShadowFilter.h */,
+				EF7C364F1E12643900618589 /* GPUImageHighPassFilter.h */,
+				EF7C36501E12643900618589 /* GPUImageHistogramEqualizationFilter.h */,
+				EF7C36511E12643900618589 /* GPUImageHistogramFilter.h */,
+				EF7C36521E12643900618589 /* GPUImageHistogramGenerator.h */,
+				EF7C36531E12643900618589 /* GPUImageHoughTransformLineDetector.h */,
+				EF7C36541E12643900618589 /* GPUImageHSBFilter.h */,
+				EF7C36551E12643900618589 /* GPUImageHueBlendFilter.h */,
+				EF7C36561E12643900618589 /* GPUImageHueFilter.h */,
+				EF7C36571E12643900618589 /* GPUImageiOSBlurFilter.h */,
+				EF7C36581E12643900618589 /* GPUImageJFAVoronoiFilter.h */,
+				EF7C36591E12643900618589 /* GPUImageKuwaharaFilter.h */,
+				EF7C365A1E12643900618589 /* GPUImageKuwaharaRadius3Filter.h */,
+				EF7C365B1E12643900618589 /* GPUImageLanczosResamplingFilter.h */,
+				EF7C365C1E12643900618589 /* GPUImageLaplacianFilter.h */,
+				EF7C365D1E12643900618589 /* GPUImageLevelsFilter.h */,
+				EF7C365E1E12643900618589 /* GPUImageLightenBlendFilter.h */,
+				EF7C365F1E12643900618589 /* GPUImageLinearBurnBlendFilter.h */,
+				EF7C36601E12643900618589 /* GPUImageLineGenerator.h */,
+				EF7C36611E12643900618589 /* GPUImageLocalBinaryPatternFilter.h */,
+				EF7C36621E12643900618589 /* GPUImageLookupFilter.h */,
+				EF7C36631E12643900618589 /* GPUImageLowPassFilter.h */,
+				EF7C36641E12643900618589 /* GPUImageLuminanceRangeFilter.h */,
+				EF7C36651E12643900618589 /* GPUImageLuminanceThresholdFilter.h */,
+				EF7C36661E12643900618589 /* GPUImageLuminosity.h */,
+				EF7C36671E12643900618589 /* GPUImageLuminosityBlendFilter.h */,
+				EF7C36681E12643900618589 /* GPUImageMaskFilter.h */,
+				EF7C36691E12643900618589 /* GPUImageMedianFilter.h */,
+				EF7C366A1E12643900618589 /* GPUImageMissEtikateFilter.h */,
+				EF7C366B1E12643900618589 /* GPUImageMonochromeFilter.h */,
+				EF7C366C1E12643900618589 /* GPUImageMosaicFilter.h */,
+				EF7C366D1E12643900618589 /* GPUImageMotionBlurFilter.h */,
+				EF7C366E1E12643900618589 /* GPUImageMotionDetector.h */,
+				EF7C366F1E12643900618589 /* GPUImageMovie.h */,
+				EF7C36701E12643900618589 /* GPUImageMovieComposition.h */,
+				EF7C36711E12643900618589 /* GPUImageMovieWriter.h */,
+				EF7C36721E12643900618589 /* GPUImageMultiplyBlendFilter.h */,
+				EF7C36731E12643900618589 /* GPUImageNobleCornerDetectionFilter.h */,
+				EF7C36741E12643900618589 /* GPUImageNonMaximumSuppressionFilter.h */,
+				EF7C36751E12643900618589 /* GPUImageNormalBlendFilter.h */,
+				EF7C36761E12643900618589 /* GPUImageOpacityFilter.h */,
+				EF7C36771E12643900618589 /* GPUImageOpeningFilter.h */,
+				EF7C36781E12643900618589 /* GPUImageOutput.h */,
+				EF7C36791E12643900618589 /* GPUImageOverlayBlendFilter.h */,
+				EF7C367A1E12643900618589 /* GPUImageParallelCoordinateLineTransformFilter.h */,
+				EF7C367B1E12643900618589 /* GPUImagePerlinNoiseFilter.h */,
+				EF7C367C1E12643900618589 /* GPUImagePicture+TextureSubimage.h */,
+				EF7C367D1E12643900618589 /* GPUImagePicture.h */,
+				EF7C367E1E12643900618589 /* GPUImagePinchDistortionFilter.h */,
+				EF7C367F1E12643900618589 /* GPUImagePixellateFilter.h */,
+				EF7C36801E12643900618589 /* GPUImagePixellatePositionFilter.h */,
+				EF7C36811E12643900618589 /* GPUImagePoissonBlendFilter.h */,
+				EF7C36821E12643900618589 /* GPUImagePolarPixellateFilter.h */,
+				EF7C36831E12643900618589 /* GPUImagePolkaDotFilter.h */,
+				EF7C36841E12643900618589 /* GPUImagePosterizeFilter.h */,
+				EF7C36851E12643900618589 /* GPUImagePrewittEdgeDetectionFilter.h */,
+				EF7C36861E12643900618589 /* GPUImageRawDataInput.h */,
+				EF7C36871E12643900618589 /* GPUImageRawDataOutput.h */,
+				EF7C36881E12643900618589 /* GPUImageRGBClosingFilter.h */,
+				EF7C36891E12643900618589 /* GPUImageRGBDilationFilter.h */,
+				EF7C368A1E12643900618589 /* GPUImageRGBErosionFilter.h */,
+				EF7C368B1E12643900618589 /* GPUImageRGBFilter.h */,
+				EF7C368C1E12643900618589 /* GPUImageRGBOpeningFilter.h */,
+				EF7C368D1E12643900618589 /* GPUImageSaturationBlendFilter.h */,
+				EF7C368E1E12643900618589 /* GPUImageSaturationFilter.h */,
+				EF7C368F1E12643900618589 /* GPUImageScreenBlendFilter.h */,
+				EF7C36901E12643900618589 /* GPUImageSepiaFilter.h */,
+				EF7C36911E12643900618589 /* GPUImageSharpenFilter.h */,
+				EF7C36921E12643900618589 /* GPUImageShiTomasiFeatureDetectionFilter.h */,
+				EF7C36931E12643900618589 /* GPUImageSingleComponentGaussianBlurFilter.h */,
+				EF7C36941E12643900618589 /* GPUImageSketchFilter.h */,
+				EF7C36951E12643900618589 /* GPUImageSmoothToonFilter.h */,
+				EF7C36961E12643900618589 /* GPUImageSobelEdgeDetectionFilter.h */,
+				EF7C36971E12643900618589 /* GPUImageSoftEleganceFilter.h */,
+				EF7C36981E12643900618589 /* GPUImageSoftLightBlendFilter.h */,
+				EF7C36991E12643900618589 /* GPUImageSolarizeFilter.h */,
+				EF7C369A1E12643900618589 /* GPUImageSolidColorGenerator.h */,
+				EF7C369B1E12643900618589 /* GPUImageSourceOverBlendFilter.h */,
+				EF7C369C1E12643900618589 /* GPUImageSphereRefractionFilter.h */,
+				EF7C369D1E12643900618589 /* GPUImageStillCamera.h */,
+				EF7C369E1E12643900618589 /* GPUImageStretchDistortionFilter.h */,
+				EF7C369F1E12643900618589 /* GPUImageSubtractBlendFilter.h */,
+				EF7C36A01E12643900618589 /* GPUImageSwirlFilter.h */,
+				EF7C36A11E12643900618589 /* GPUImageTextureInput.h */,
+				EF7C36A21E12643900618589 /* GPUImageTextureOutput.h */,
+				EF7C36A31E12643900618589 /* GPUImageThreeInputFilter.h */,
+				EF7C36A41E12643900618589 /* GPUImageThresholdEdgeDetectionFilter.h */,
+				EF7C36A51E12643900618589 /* GPUImageThresholdedNonMaximumSuppressionFilter.h */,
+				EF7C36A61E12643900618589 /* GPUImageThresholdSketchFilter.h */,
+				EF7C36A71E12643900618589 /* GPUImageTiltShiftFilter.h */,
+				EF7C36A81E12643900618589 /* GPUImageToneCurveFilter.h */,
+				EF7C36A91E12643900618589 /* GPUImageToonFilter.h */,
+				EF7C36AA1E12643900618589 /* GPUImageTransformFilter.h */,
+				EF7C36AB1E12643900618589 /* GPUImageTwoInputCrossTextureSamplingFilter.h */,
+				EF7C36AC1E12643900618589 /* GPUImageTwoInputFilter.h */,
+				EF7C36AD1E12643900618589 /* GPUImageTwoPassFilter.h */,
+				EF7C36AE1E12643900618589 /* GPUImageTwoPassTextureSamplingFilter.h */,
+				EF7C36AF1E12643900618589 /* GPUImageUIElement.h */,
+				EF7C36B01E12643900618589 /* GPUImageUnsharpMaskFilter.h */,
+				EF7C36B11E12643900618589 /* GPUImageVideoCamera.h */,
+				EF7C36B21E12643900618589 /* GPUImageView.h */,
+				EF7C36B31E12643900618589 /* GPUImageVignetteFilter.h */,
+				EF7C36B41E12643900618589 /* GPUImageVoronoiConsumerFilter.h */,
+				EF7C36B51E12643900618589 /* GPUImageWeakPixelInclusionFilter.h */,
+				EF7C36B61E12643900618589 /* GPUImageWhiteBalanceFilter.h */,
+				EF7C36B71E12643900618589 /* GPUImageXYDerivativeFilter.h */,
+				EF7C36B81E12643900618589 /* GPUImageZoomBlurFilter.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EF7C36C11E1299F700618589 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C36C21E1299F700618589 /* OrderCell.h */,
+				EF7C36C31E1299F700618589 /* OrderCell.m */,
+				EF7C36C41E1299F700618589 /* OrderCell.xib */,
+				EF7C36C51E1299F700618589 /* OrderHeaderView.h */,
+				EF7C36C61E1299F700618589 /* OrderHeaderView.m */,
+				EF7C36C71E1299F700618589 /* OrderHeaderView.xib */,
+				EF7C36C81E1299F700618589 /* OrderTableView.h */,
+				EF7C36C91E1299F700618589 /* OrderTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +725,7 @@
 		EFDD07AC1E114D130083C80A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				EF7C36081E12642800618589 /* Lib */,
 				EFF237FF1E11DF3B005065B1 /* Category */,
 				EFDD07AD1E114D130083C80A /* AppDelegate.h */,
 				EFDD07AE1E114D130083C80A /* AppDelegate.m */,
@@ -357,8 +740,10 @@
 		EFF237FF1E11DF3B005065B1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				EFF238001E11DF44005065B1 /* UIImage+ImageEffects.h */,
-				EFF238011E11DF44005065B1 /* UIImage+ImageEffects.m */,
+				EF7C36D71E12A73C00618589 /* UIImage+Image.h */,
+				EF7C36D81E12A73C00618589 /* UIImage+Image.m */,
+				EF7C36DA1E12A7EA00618589 /* UIBarButtonItem+BarButtonItem.h */,
+				EF7C36DB1E12A7EA00618589 /* UIBarButtonItem+BarButtonItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -436,8 +821,8 @@
 			files = (
 				EFDD07A01E1146C00083C80A /* LaunchScreen.storyboard in Resources */,
 				EFDD079D1E1146C00083C80A /* Assets.xcassets in Resources */,
-				EF7C36001E12557F00618589 /* OrderCell.xib in Resources */,
-				EF7C36031E12557F00618589 /* OrderHeaderView.xib in Resources */,
+				EF7C36CB1E1299F700618589 /* OrderCell.xib in Resources */,
+				EF7C36CD1E1299F700618589 /* OrderHeaderView.xib in Resources */,
 				EFDD079B1E1146C00083C80A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,17 +882,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7C35FF1E12557F00618589 /* OrderCell.m in Sources */,
+				EF7C36CC1E1299F700618589 /* OrderHeaderView.m in Sources */,
+				EF7C36CA1E1299F700618589 /* OrderCell.m in Sources */,
 				EFDD07B51E114D130083C80A /* main.m in Sources */,
+				EF7C36DC1E12A7EA00618589 /* UIBarButtonItem+BarButtonItem.m in Sources */,
 				00DCE3231E11FCB500E6F158 /* TakeOutViewController.m in Sources */,
 				00DCE3261E11FCC100E6F158 /* OrderFormViewController.m in Sources */,
+				EF7C36BF1E1283CE00618589 /* OrderController.m in Sources */,
 				00DCE3201E11FCAC00E6F158 /* HomePageViewController.m in Sources */,
-				EF7C36021E12557F00618589 /* OrderHeaderView.m in Sources */,
-				EF7C36041E12557F00618589 /* OrderTableView.m in Sources */,
+				EF7C36CE1E1299F700618589 /* OrderTableView.m in Sources */,
 				EFDD07B41E114D130083C80A /* AppDelegate.m in Sources */,
-				EFF238021E11DF44005065B1 /* UIImage+ImageEffects.m in Sources */,
+				EF7C36D91E12A73C00618589 /* UIImage+Image.m in Sources */,
 				00DCE32C1E11FD4D00E6F158 /* TabBarViewController.m in Sources */,
-				EF7C36011E12557F00618589 /* OrderController.m in Sources */,
 				00DCE3291E11FCC800E6F158 /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,6 +1019,10 @@
 				INFOPLIST_FILE = DianBa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DianBa/Class/Other/Lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangchenlu.www.DianBa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -649,6 +1039,10 @@
 				INFOPLIST_FILE = DianBa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DianBa/Class/Other/Lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangchenlu.www.DianBa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
