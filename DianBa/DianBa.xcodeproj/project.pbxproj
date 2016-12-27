@@ -13,14 +13,18 @@
 		00DCE3291E11FCC800E6F158 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE3281E11FCC800E6F158 /* MineViewController.m */; };
 		00DCE32C1E11FD4D00E6F158 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE32B1E11FD4D00E6F158 /* TabBarViewController.m */; };
 		CF01136A59D8393F1EC27771 /* Pods_DianBa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009F053588FA4657C3B60710 /* Pods_DianBa.framework */; };
+		EF7C35FF1E12557F00618589 /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C35F51E12557F00618589 /* OrderCell.m */; };
+		EF7C36001E12557F00618589 /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7C35F61E12557F00618589 /* OrderCell.xib */; };
+		EF7C36011E12557F00618589 /* OrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C35F81E12557F00618589 /* OrderController.m */; };
+		EF7C36021E12557F00618589 /* OrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C35FA1E12557F00618589 /* OrderHeaderView.m */; };
+		EF7C36031E12557F00618589 /* OrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */; };
+		EF7C36041E12557F00618589 /* OrderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C35FD1E12557F00618589 /* OrderTableView.m */; };
 		EFDD079B1E1146C00083C80A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD07991E1146C00083C80A /* Main.storyboard */; };
 		EFDD079D1E1146C00083C80A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDD079C1E1146C00083C80A /* Assets.xcassets */; };
 		EFDD07A01E1146C00083C80A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD079E1E1146C00083C80A /* LaunchScreen.storyboard */; };
 		EFDD07B41E114D130083C80A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDD07AE1E114D130083C80A /* AppDelegate.m */; };
 		EFDD07B51E114D130083C80A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDD07AF1E114D130083C80A /* main.m */; };
 		EFF238021E11DF44005065B1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF238011E11DF44005065B1 /* UIImage+ImageEffects.m */; };
-		EFF2380A1E11EA98005065B1 /* OrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF238081E11EA98005065B1 /* OrderController.m */; };
-		EFF2380B1E11EA98005065B1 /* OrderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF238091E11EA98005065B1 /* OrderController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,16 @@
 		00DCE32A1E11FD4D00E6F158 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		00DCE32B1E11FD4D00E6F158 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.debug.xcconfig"; sourceTree = "<group>"; };
+		EF7C35F41E12557F00618589 /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
+		EF7C35F51E12557F00618589 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
+		EF7C35F61E12557F00618589 /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		EF7C35F71E12557F00618589 /* OrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderController.h; sourceTree = "<group>"; };
+		EF7C35F81E12557F00618589 /* OrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderController.m; sourceTree = "<group>"; };
+		EF7C35F91E12557F00618589 /* OrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHeaderView.h; sourceTree = "<group>"; };
+		EF7C35FA1E12557F00618589 /* OrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHeaderView.m; sourceTree = "<group>"; };
+		EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderHeaderView.xib; sourceTree = "<group>"; };
+		EF7C35FC1E12557F00618589 /* OrderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableView.h; sourceTree = "<group>"; };
+		EF7C35FD1E12557F00618589 /* OrderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableView.m; sourceTree = "<group>"; };
 		EFDD078D1E1146C00083C80A /* DianBa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianBa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDD079A1E1146C00083C80A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFDD079C1E1146C00083C80A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,9 +61,6 @@
 		EFDD07AF1E114D130083C80A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFF238001E11DF44005065B1 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		EFF238011E11DF44005065B1 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		EFF238071E11EA98005065B1 /* OrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderController.h; sourceTree = "<group>"; };
-		EFF238081E11EA98005065B1 /* OrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderController.m; sourceTree = "<group>"; };
-		EFF238091E11EA98005065B1 /* OrderController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderController.xib; sourceTree = "<group>"; };
 		F67FBD5FF06BEE3427429983 /* Pods-DianBa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.release.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,6 +247,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF7C35F21E12557F00618589 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C35F31E12557F00618589 /* Controller */,
+				EF7C35FE1E12557F00618589 /* Model */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		EF7C35F31E12557F00618589 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C35F41E12557F00618589 /* OrderCell.h */,
+				EF7C35F51E12557F00618589 /* OrderCell.m */,
+				EF7C35F61E12557F00618589 /* OrderCell.xib */,
+				EF7C35F71E12557F00618589 /* OrderController.h */,
+				EF7C35F81E12557F00618589 /* OrderController.m */,
+				EF7C35F91E12557F00618589 /* OrderHeaderView.h */,
+				EF7C35FA1E12557F00618589 /* OrderHeaderView.m */,
+				EF7C35FB1E12557F00618589 /* OrderHeaderView.xib */,
+				EF7C35FC1E12557F00618589 /* OrderTableView.h */,
+				EF7C35FD1E12557F00618589 /* OrderTableView.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF7C35FE1E12557F00618589 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EFDD07841E1146C00083C80A = {
 			isa = PBXGroup;
 			children = (
@@ -281,8 +325,8 @@
 		EFDD07A71E114D130083C80A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EF7C35F21E12557F00618589 /* Order */,
 				00DCE3081E11F7CE00E6F158 /* Seek */,
-				EFF238031E11EA62005065B1 /* Order */,
 				EFDD07AC1E114D130083C80A /* Other */,
 			);
 			path = Class;
@@ -309,40 +353,6 @@
 				EFF238011E11DF44005065B1 /* UIImage+ImageEffects.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		EFF238031E11EA62005065B1 /* Order */ = {
-			isa = PBXGroup;
-			children = (
-				EFF238041E11EA62005065B1 /* Controller */,
-				EFF238051E11EA62005065B1 /* Model */,
-				EFF238061E11EA62005065B1 /* View */,
-			);
-			path = Order;
-			sourceTree = "<group>";
-		};
-		EFF238041E11EA62005065B1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				EFF238071E11EA98005065B1 /* OrderController.h */,
-				EFF238081E11EA98005065B1 /* OrderController.m */,
-				EFF238091E11EA98005065B1 /* OrderController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		EFF238051E11EA62005065B1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EFF238061E11EA62005065B1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F3C373EFCB422F8036BB34D1 /* Pods */ = {
@@ -415,9 +425,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFF2380B1E11EA98005065B1 /* OrderController.xib in Resources */,
 				EFDD07A01E1146C00083C80A /* LaunchScreen.storyboard in Resources */,
 				EFDD079D1E1146C00083C80A /* Assets.xcassets in Resources */,
+				EF7C36001E12557F00618589 /* OrderCell.xib in Resources */,
+				EF7C36031E12557F00618589 /* OrderHeaderView.xib in Resources */,
 				EFDD079B1E1146C00083C80A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,14 +488,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFF2380A1E11EA98005065B1 /* OrderController.m in Sources */,
+				EF7C35FF1E12557F00618589 /* OrderCell.m in Sources */,
 				EFDD07B51E114D130083C80A /* main.m in Sources */,
 				00DCE3231E11FCB500E6F158 /* TakeOutViewController.m in Sources */,
 				00DCE3261E11FCC100E6F158 /* OrderFormViewController.m in Sources */,
 				00DCE3201E11FCAC00E6F158 /* HomePageViewController.m in Sources */,
+				EF7C36021E12557F00618589 /* OrderHeaderView.m in Sources */,
+				EF7C36041E12557F00618589 /* OrderTableView.m in Sources */,
 				EFDD07B41E114D130083C80A /* AppDelegate.m in Sources */,
 				EFF238021E11DF44005065B1 /* UIImage+ImageEffects.m in Sources */,
 				00DCE32C1E11FD4D00E6F158 /* TabBarViewController.m in Sources */,
+				EF7C36011E12557F00618589 /* OrderController.m in Sources */,
 				00DCE3291E11FCC800E6F158 /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
