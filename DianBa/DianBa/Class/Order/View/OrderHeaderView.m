@@ -7,7 +7,6 @@
 //
 
 #import "OrderHeaderView.h"
-#import "GPUImage.h"
 
 @implementation OrderHeaderView
 
