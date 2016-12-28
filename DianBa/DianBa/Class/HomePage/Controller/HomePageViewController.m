@@ -7,7 +7,7 @@
 //
 
 #import "HomePageViewController.h"
-#import "SearchTableViewController.h"
+#import "DQHotSearchViewController.h"
 #import "CityList.h"
 
 @interface HomePageViewController (){
@@ -75,7 +75,7 @@
 }
 
 - (void)myButtonClick:(UIButton *)but{
-    [self.navigationController pushViewController:[[SearchTableViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[DQHotSearchViewController alloc] init] animated:YES];
 }
 
 - (void)selectButton:(UIButton *)but{
