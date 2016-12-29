@@ -23,8 +23,7 @@
 #import "UIImage+Image.h"
 #import "UIBarButtonItem+BarButtonItem.h"
 #import "UIBarButtonItem+Extension.h"
-#import "MBProgressHUD.h"
-
+#import <MBProgressHUD/MBProgressHUD.h>
 //是否IOS7
 #define IOS_7 ( [[UIDevice currentDevice].systemVersion doubleValue] >= 7.0f)
 #define IOS_8 ( [[UIDevice currentDevice].systemVersion doubleValue] >= 8.0f)

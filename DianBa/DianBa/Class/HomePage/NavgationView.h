@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NavgationView : UIView
-
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
+@property (weak, nonatomic) IBOutlet UIButton *cityButton;
 @end

@@ -7,5 +7,7 @@ pod 'SDWebImage'
 pod 'MJRefresh'
 pod 'MJExtension'
 pod 'SDAutoLayout'
+pod 'Masonry'
+pod 'MBProgressHUD'
 
 end

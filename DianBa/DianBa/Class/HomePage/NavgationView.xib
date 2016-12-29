@@ -15,50 +15,60 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxA-OF-UYp">
-                    <rect key="frame" x="12" y="5" width="46" height="30"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrows" translatesAutoresizingMaskIntoConstraints="NO" id="BaG-kX-QnI">
+                    <rect key="frame" x="68" y="17" width="11" height="7"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="dGL-Bp-f4o"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="BaG-kX-QnI">
-                    <rect key="frame" x="66" y="16" width="11" height="7"/>
-                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="7" id="278-ED-jVm"/>
                         <constraint firstAttribute="height" constant="7" id="3LG-2o-PL5"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="11" id="FSA-QH-WVJ"/>
                         <constraint firstAttribute="width" constant="11" id="UfE-sP-657"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXC-T4-IFZ">
-                    <rect key="frame" x="113" y="7" width="116" height="27"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXC-T4-IFZ">
+                    <rect key="frame" x="107" y="5" width="212" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-NX-kpN">
-                    <rect key="frame" x="350" y="20" width="15" height="15"/>
+                    <rect key="frame" x="345" y="15" width="15" height="15"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="15" id="vDd-Vn-4Hq"/>
                         <constraint firstAttribute="width" constant="15" id="xIa-I3-6rH"/>
                     </constraints>
                     <state key="normal" title="Button" image="more"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PC-af-Y4k">
+                    <rect key="frame" x="12" y="10" width="49" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="雷冬凯">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="LxA-OF-UYp" secondAttribute="bottom" constant="5" id="LQH-Ch-OTu"/>
-                <constraint firstAttribute="trailing" secondItem="INa-NX-kpN" secondAttribute="trailing" constant="10" id="Lf8-nn-dBq"/>
-                <constraint firstItem="BaG-kX-QnI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Wwn-OE-k3w"/>
-                <constraint firstItem="INa-NX-kpN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="XHV-GQ-Osf"/>
-                <constraint firstItem="BaG-kX-QnI" firstAttribute="leading" secondItem="LxA-OF-UYp" secondAttribute="trailing" constant="8" id="ae5-jk-vnv"/>
-                <constraint firstItem="LxA-OF-UYp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="qsq-gh-aOu"/>
-                <constraint firstItem="LxA-OF-UYp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="stm-ip-sGr"/>
+                <constraint firstAttribute="bottom" secondItem="iXC-T4-IFZ" secondAttribute="bottom" constant="5" id="0vs-wF-PhG"/>
+                <constraint firstItem="0PC-af-Y4k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="351-ja-Lsz"/>
+                <constraint firstItem="iXC-T4-IFZ" firstAttribute="leading" secondItem="BaG-kX-QnI" secondAttribute="trailing" constant="28" id="9uh-4P-npd"/>
+                <constraint firstItem="INa-NX-kpN" firstAttribute="leading" secondItem="iXC-T4-IFZ" secondAttribute="trailing" constant="26" id="DAK-DG-Dpm"/>
+                <constraint firstAttribute="trailing" secondItem="INa-NX-kpN" secondAttribute="trailing" constant="15" id="Lf8-nn-dBq"/>
+                <constraint firstItem="BaG-kX-QnI" firstAttribute="leading" secondItem="0PC-af-Y4k" secondAttribute="trailing" constant="7" id="MYj-3O-t2m"/>
+                <constraint firstItem="iXC-T4-IFZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Ubq-J1-Pow"/>
+                <constraint firstItem="INa-NX-kpN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="XHV-GQ-Osf"/>
+                <constraint firstItem="0PC-af-Y4k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="c3F-Pe-R1B"/>
+                <constraint firstItem="BaG-kX-QnI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="gBl-I8-iPy"/>
+                <constraint firstAttribute="bottom" secondItem="0PC-af-Y4k" secondAttribute="bottom" constant="10" id="qgv-Di-QXu"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addButton" destination="INa-NX-kpN" id="3lX-ok-yyE"/>
+                <outlet property="cityButton" destination="0PC-af-Y4k" id="Siz-Cc-juK"/>
+                <outlet property="searchButton" destination="iXC-T4-IFZ" id="dSR-tK-L42"/>
+            </connections>
             <point key="canvasLocation" x="15.5" y="143"/>
         </view>
     </objects>
     <resources>
-        <image name="arrow.png" width="15" height="40"/>
+        <image name="arrows" width="10" height="6"/>
         <image name="more" width="15" height="15"/>
     </resources>
 </document>
