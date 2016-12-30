@@ -21,7 +21,7 @@
     //初始化
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = [[TabBarViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[OrderController alloc] init]];
     [self.window makeKeyAndVisible];
 
     return YES;

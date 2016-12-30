@@ -10,7 +10,7 @@
 
 @interface OrderHeaderView : UIView
 
-@property (strong, nonatomic) IBOutlet UIView *backgroundView;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImgView;
 @property (strong, nonatomic) IBOutlet UIImageView *shopImg;
 @property (strong, nonatomic) IBOutlet UILabel *shopName;
 @property (strong, nonatomic) IBOutlet UILabel *shopBrief;
