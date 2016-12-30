@@ -25,14 +25,14 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXC-T4-IFZ">
-                    <rect key="frame" x="107" y="5" width="212" height="30"/>
+                    <rect key="frame" x="107" y="5" width="202" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-NX-kpN">
-                    <rect key="frame" x="345" y="15" width="15" height="15"/>
+                    <rect key="frame" x="335" y="10" width="25" height="25"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="15" id="vDd-Vn-4Hq"/>
-                        <constraint firstAttribute="width" constant="15" id="xIa-I3-6rH"/>
+                        <constraint firstAttribute="height" constant="25" id="vDd-Vn-4Hq"/>
+                        <constraint firstAttribute="width" constant="25" id="xIa-I3-6rH"/>
                     </constraints>
                     <state key="normal" title="Button" image="more"/>
                 </button>
@@ -53,7 +53,7 @@
                 <constraint firstAttribute="trailing" secondItem="INa-NX-kpN" secondAttribute="trailing" constant="15" id="Lf8-nn-dBq"/>
                 <constraint firstItem="BaG-kX-QnI" firstAttribute="leading" secondItem="0PC-af-Y4k" secondAttribute="trailing" constant="7" id="MYj-3O-t2m"/>
                 <constraint firstItem="iXC-T4-IFZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Ubq-J1-Pow"/>
-                <constraint firstItem="INa-NX-kpN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="XHV-GQ-Osf"/>
+                <constraint firstItem="INa-NX-kpN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="XHV-GQ-Osf"/>
                 <constraint firstItem="0PC-af-Y4k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="c3F-Pe-R1B"/>
                 <constraint firstItem="BaG-kX-QnI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="gBl-I8-iPy"/>
                 <constraint firstAttribute="bottom" secondItem="0PC-af-Y4k" secondAttribute="bottom" constant="10" id="qgv-Di-QXu"/>

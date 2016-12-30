@@ -17,6 +17,9 @@
 		0000BEDF1E1359D200F3A049 /* SearchRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000BED71E1359D200F3A049 /* SearchRecordTableViewCell.m */; };
 		0000BEE51E13DAA900F3A049 /* NavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000BEE41E13DAA900F3A049 /* NavgationView.m */; };
 		0000BEE71E13DACA00F3A049 /* NavgationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0000BEE61E13DACA00F3A049 /* NavgationView.xib */; };
+		009038CE1E15250400EE694F /* popUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009038CD1E15250400EE694F /* popUpView.m */; };
+		009038D01E15251600EE694F /* popUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009038CF1E15251600EE694F /* popUpView.xib */; };
+		00D8A5FF1E1615960085441B /* scanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D8A5FE1E1615960085441B /* scanQRViewController.m */; };
 		00E592161E12A75100065BC4 /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00E592151E12A75100065BC4 /* cityGroups.plist */; };
 		CF01136A59D8393F1EC27771 /* Pods_DianBa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009F053588FA4657C3B60710 /* Pods_DianBa.framework */; };
 		EF24DA7F1E132FD0006AA5E2 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DA3C1E132FD0006AA5E2 /* HomePageViewController.m */; };
@@ -70,7 +73,12 @@
 		0000BEE31E13DAA900F3A049 /* NavgationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavgationView.h; path = DianBa/Class/HomePage/NavgationView.h; sourceTree = SOURCE_ROOT; };
 		0000BEE41E13DAA900F3A049 /* NavgationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavgationView.m; path = DianBa/Class/HomePage/NavgationView.m; sourceTree = SOURCE_ROOT; };
 		0000BEE61E13DACA00F3A049 /* NavgationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NavgationView.xib; path = DianBa/Class/HomePage/NavgationView.xib; sourceTree = SOURCE_ROOT; };
+		009038CC1E15250400EE694F /* popUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = popUpView.h; path = DianBa/Class/HomePage/popUpView.h; sourceTree = SOURCE_ROOT; };
+		009038CD1E15250400EE694F /* popUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = popUpView.m; path = DianBa/Class/HomePage/popUpView.m; sourceTree = SOURCE_ROOT; };
+		009038CF1E15251600EE694F /* popUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = popUpView.xib; path = DianBa/Class/HomePage/popUpView.xib; sourceTree = SOURCE_ROOT; };
 		009F053588FA4657C3B60710 /* Pods_DianBa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DianBa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D8A5FD1E1615960085441B /* scanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanQRViewController.h; sourceTree = "<group>"; };
+		00D8A5FE1E1615960085441B /* scanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scanQRViewController.m; sourceTree = "<group>"; };
 		00E592151E12A75100065BC4 /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
 		7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.debug.xcconfig"; sourceTree = "<group>"; };
 		EF24DA3B1E132FD0006AA5E2 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
@@ -205,6 +213,8 @@
 			children = (
 				EF24DA3B1E132FD0006AA5E2 /* HomePageViewController.h */,
 				EF24DA3C1E132FD0006AA5E2 /* HomePageViewController.m */,
+				00D8A5FD1E1615960085441B /* scanQRViewController.h */,
+				00D8A5FE1E1615960085441B /* scanQRViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +301,9 @@
 				0000BEE31E13DAA900F3A049 /* NavgationView.h */,
 				0000BEE41E13DAA900F3A049 /* NavgationView.m */,
 				0000BEE61E13DACA00F3A049 /* NavgationView.xib */,
+				009038CC1E15250400EE694F /* popUpView.h */,
+				009038CD1E15250400EE694F /* popUpView.m */,
+				009038CF1E15251600EE694F /* popUpView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,7 +614,7 @@
 				TargetAttributes = {
 					EFDD078C1E1146C00083C80A = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = D96ZDW3KYV;
+						DevelopmentTeam = 4W8D74J5XJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -629,6 +642,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009038D01E15251600EE694F /* popUpView.xib in Resources */,
 				0000BEE71E13DACA00F3A049 /* NavgationView.xib in Resources */,
 				0000BEDB1E1359D200F3A049 /* HotSearchCollectionViewCell.xib in Resources */,
 				EFDD07A01E1146C00083C80A /* LaunchScreen.storyboard in Resources */,
@@ -705,12 +719,14 @@
 				EF24DA7F1E132FD0006AA5E2 /* HomePageViewController.m in Sources */,
 				EF24DAA81E1330CE006AA5E2 /* UIBarButtonItem+BarButtonItem.m in Sources */,
 				EF24DA851E132FD0006AA5E2 /* OrderFormViewController.m in Sources */,
+				00D8A5FF1E1615960085441B /* scanQRViewController.m in Sources */,
 				EF24DA891E132FD0006AA5E2 /* HanyuPinyinOutputFormat.m in Sources */,
 				EF24DA861E132FD0006AA5E2 /* UIBarButtonItem+Extension.m in Sources */,
 				0000BEDC1E1359D200F3A049 /* HotSearchTableViewCell.m in Sources */,
 				EF24DAA11E133093006AA5E2 /* main.m in Sources */,
 				0000BEE51E13DAA900F3A049 /* NavgationView.m in Sources */,
 				0000BEDD1E1359D200F3A049 /* SearchHistoryRecordfooter.m in Sources */,
+				009038CE1E15250400EE694F /* popUpView.m in Sources */,
 				0000BEDF1E1359D200F3A049 /* SearchRecordTableViewCell.m in Sources */,
 				0000BED91E1359D200F3A049 /* DQTextFild.m in Sources */,
 				EF24DA881E132FD0006AA5E2 /* ChineseToPinyinResource.m in Sources */,
@@ -794,7 +810,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -835,7 +851,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -847,11 +863,11 @@
 			baseConfigurationReference = 7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D96ZDW3KYV;
+				DEVELOPMENT_TEAM = 4W8D74J5XJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DianBa/Class/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = DianBa/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -867,11 +883,11 @@
 			baseConfigurationReference = F67FBD5FF06BEE3427429983 /* Pods-DianBa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D96ZDW3KYV;
+				DEVELOPMENT_TEAM = 4W8D74J5XJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DianBa/Class/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = DianBa/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
