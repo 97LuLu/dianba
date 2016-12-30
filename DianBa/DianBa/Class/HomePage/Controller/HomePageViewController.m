@@ -8,88 +8,126 @@
 
 #import "HomePageViewController.h"
 #import "DQHotSearchViewController.h"
+#import "popUpView.h"
+#import "NavgationView.h"
 #import "CityList.h"
+#import <AVFoundation/AVFoundation.h>
+#import "scanQRViewController.h"
 
-@interface HomePageViewController (){
+@interface HomePageViewController ()<AVCaptureMetadataOutputObjectsDelegate>{
     UIButton *button;
 }
 
+@property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
+@property (nonatomic, strong) NavgationView * navgationView;
+@property (nonatomic, strong) popUpView * popUp;
 @end
 
 @implementation HomePageViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    self.navgationView.hidden = NO;
+    self.popUp.hidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    self.navgationView.hidden = YES;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"";
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar addSubview:self.navgationView];
     
-    [self setupNavigationBar];
-}
-
-- (void)setupNavigationBar {
+    [self.view addSubview:self.popUp];
+    [self.view addGestureRecognizer:self.tapGesture];
     
-    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    button1.frame = CGRectMake(100, 100, 220, 35);
-    button1.backgroundColor = [UIColor clearColor];
-    //设置button正常状态下的图片
-    [button1 setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
-    //button图片的偏移量，距上左下右分别(10, 10, 10, 60)像素点
-    button1.imageEdgeInsets = UIEdgeInsetsMake(10, 0, 10, 60);
-    [button1 setTitle:@"输入商家、商圈" forState:UIControlStateNormal];
-    //button标题的偏移量，这个偏移量是相对于图片的
-    button1.titleEdgeInsets = UIEdgeInsetsMake(0, -30, 0, 0);
-    //设置button正常状态下的标题颜色
-    [button1 setTitleColor:[UIColor colorWithRed:0.89 green:0.89 blue:0.89 alpha:1.00] forState:UIControlStateNormal];
-    button1.titleLabel.font = [UIFont systemFontOfSize:18];
-    //
-    button1.layer.masksToBounds = YES;
-    button1.layer.cornerRadius = 20;
-    button1.layer.borderColor = [[UIColor colorWithRed:0.89 green:0.89 blue:0.89 alpha:1.00] CGColor];
-    button1.layer.borderWidth = 0.5;
-    [button1 addTarget:self action:@selector(myButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.navigationItem.titleView = button1;
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"more" imageEdgeInsets:UIEdgeInsetsMake(0, 8, 0, 0)
-        target:self
-        action:@selector(addButton)];
-    
-    
-    button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0 , 0, 80, 50);
-    button.backgroundColor = [UIColor clearColor];
-    //设置button正常状态下的图片
-    [button setImage:[UIImage imageNamed:@"arrows"] forState:UIControlStateNormal];
-    //button图片的偏移量，距上左下右分别(10, 10, 10, 60)像素点
-    button.imageEdgeInsets = UIEdgeInsetsMake(10, 50, 10, -20);
-    [button setTitle:@"城市" forState:UIControlStateNormal];
-    //button标题的偏移量，这个偏移量是相对于图片的
-    //上左下右
-    button.titleEdgeInsets = UIEdgeInsetsMake(0, -40, 0, 0);
-    //设置button正常状态下的标题颜色
-    [button setTitleColor:[UIColor colorWithRed:0.00 green:0.00 blue:0.00 alpha:1.00] forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont systemFontOfSize:16];
-    [button addTarget:self action:@selector(selectButton:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     
 }
 
-- (void)myButtonClick:(UIButton *)but{
-    [self.navigationController pushViewController:[[DQHotSearchViewController alloc] init] animated:YES];
+- (UITapGestureRecognizer *)tapGesture{
+    if (!_tapGesture) {
+        _tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesterClick:)];
+    }
+    return _tapGesture;
 }
 
-- (void)selectButton:(UIButton *)but{
+- (void)tapGesterClick:(UITapGestureRecognizer *)tap{
+    self.popUp.hidden = YES;
+}
+
+-  (NavgationView *)navgationView{
+    if (!_navgationView) {
+        _navgationView = [[[NSBundle mainBundle] loadNibNamed:@"NavgationView" owner:self options:nil] lastObject];
+        _navgationView.frame = CGRectMake(0, 0, ScreenWidth, 40);
+        
+        //
+        [_navgationView.cityButton addTarget:self action:@selector(cityButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_navgationView.searchButton addTarget:self action:@selector(selectButton:) forControlEvents:UIControlEventTouchUpInside];
+        [_navgationView.addButton addTarget:self action:@selector(addButtonCilck) forControlEvents:UIControlEventTouchUpInside];
+        
+    }
+    return _navgationView;
+}
+
+
+
+- (void)cityButtonClick:(UIButton *)but{
+   
     CityList *cvc = [[CityList alloc]init];
     cvc.hidesBottomBarWhenPushed = YES;
     cvc.selectCity = ^(NSString *cityName){
-     but.titleLabel.text = [NSString stringWithFormat:@"%@",cityName];
+        but.titleLabel.text = [NSString stringWithFormat:@"%@",cityName];
     };
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:cvc];
     [self presentViewController:navi animated:YES completion:nil];
 }
 
-
-- (void)addButton {
-
+- (void)selectButton:(UIButton *)but{
+     [self.navigationController pushViewController:[DQHotSearchViewController new] animated:YES];
 }
+
+
+- (void)addButtonCilck{
+    self.popUp.hidden = !self.popUp.hidden;
+}
+
+- (popUpView *)popUp{
+    if (!_popUp) {
+        _popUp = [[[NSBundle mainBundle] loadNibNamed:@"popUpView" owner:self options:nil] lastObject];
+        _popUp.frame = CGRectMake(243, 64, 120, 140);
+        [_popUp.sweepQrButton addTarget:self action:@selector(sweepQrButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_popUp.paymentQrButton addTarget:self action:@selector(paymentQrButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_popUp.loginButton addTarget:self action:@selector(loginButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _popUp;
+}
+/**
+ 扫一扫的方法
+ */
+- (IBAction)sweepQrButtonClick:(id)sender {
+    NSLog(@"11111");
+    scanQRViewController *scanQr = [[scanQRViewController alloc] init];
+    [self.navigationController pushViewController:scanQr animated:YES];
+}
+
+
+/**
+ 付款码的方法
+ */
+- (IBAction)paymentQrButtonClick:(id)sender {
+     NSLog(@"22222");
+}
+
+
+/**
+ 登录的方法
+ */
+- (IBAction)loginButtonClick:(id)sender {
+     NSLog(@"3333");
+}
+
 @end
