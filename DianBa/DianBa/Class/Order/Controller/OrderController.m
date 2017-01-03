@@ -21,7 +21,8 @@
 #import "OrderData.h"
 #import "OrderResult.h"
 #import "OrderMenu.h"
-
+// 店铺详情
+#import "ShopDetailsController.h"
 
 @interface OrderController ()<UITableViewDelegate,UITableViewDataSource>
 /** 门店菜品数组 */
@@ -53,6 +54,17 @@
     [self.view addSubview:self.orderView];
     // 加载数据
     [self loadData];
+    [self.orderView.returnBtn addTarget:self action:@selector(returnBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.orderView.nReturnBtn addTarget:self action:@selector(returnBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.headerView.maskBtn addTarget:self action:@selector(pushToShopDetails:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+#pragma mark - 按钮方法
+- (void)returnBtnClick:(UIButton *)sender{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)pushToShopDetails:(UIButton *)sender{
+    [self.navigationController pushViewController:[[ShopDetailsController alloc] init] animated:YES];
 }
 
 #pragma mark - 请求数据

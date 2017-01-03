@@ -18,7 +18,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVb-hN-thm">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="6bH-FU-EgR">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="6bH-FU-EgR">
                             <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         </tableView>
@@ -98,7 +98,7 @@
                 <outlet property="starView" destination="wOE-u7-jEE" id="khm-US-hkJ"/>
                 <outlet property="table" destination="6bH-FU-EgR" id="CTp-J5-UB6"/>
             </connections>
-            <point key="canvasLocation" x="1552" y="380"/>
+            <point key="canvasLocation" x="1262" y="-150"/>
         </view>
     </objects>
     <resources>

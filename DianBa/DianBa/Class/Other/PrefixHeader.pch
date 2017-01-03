@@ -28,6 +28,7 @@
 #import "GVColor.h"
 #import "StarsView.h"
 #import "UIImage+ImageEffects.h"
+#import <Masonry/Masonry.h>
 //是否IOS7
 #define IOS_7 ( [[UIDevice currentDevice].systemVersion doubleValue] >= 7.0f)
 #define IOS_8 ( [[UIDevice currentDevice].systemVersion doubleValue] >= 8.0f)
