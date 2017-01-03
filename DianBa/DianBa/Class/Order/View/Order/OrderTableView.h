@@ -15,6 +15,10 @@
 @property (nonatomic , strong) UIButton *rowingBtn;
 @property (nonatomic , strong) UIButton *returnBtn;
 @property (nonatomic , strong) UIButton *collectionBtn;
+@property (nonatomic, strong) UIView *navigationView;
+@property (nonatomic, strong) UIButton *nReturnBtn;
+@property (nonatomic, strong) UIButton *nCollectionBtn;
+@property (nonatomic, strong) UILabel *titleLabel;
 /*-------------------  购物车  -----------------------*/
 @property (nonatomic , strong) UIView *carView;
 @property (strong , nonatomic) UIButton *carBtn;

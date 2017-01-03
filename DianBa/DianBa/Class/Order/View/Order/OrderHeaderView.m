@@ -7,17 +7,14 @@
 //
 
 #import "OrderHeaderView.h"
-#import "UIImage+ImageEffects.h"
 
 @implementation OrderHeaderView
 
 - (void)awakeFromNib{
     [super awakeFromNib];
-    
-    self.shopImg.layer.masksToBounds = YES;
-    self.shopImg.layer.cornerRadius = 59 / 2;
-    self.backgroundImgView.image = self.shopImg.image;
-    [self.backgroundImgView.image blurImageWithRadius:0.5];
+    _shopImg.layer.masksToBounds = YES;
+    _shopImg.layer.cornerRadius = 59 / 2;
+//    [];
     
 }
 

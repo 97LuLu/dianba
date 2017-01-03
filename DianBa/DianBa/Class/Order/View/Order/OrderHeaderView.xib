@@ -19,7 +19,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopImg" translatesAutoresizingMaskIntoConstraints="NO" id="mTf-2t-hb0">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="图片预加载" translatesAutoresizingMaskIntoConstraints="NO" id="mTf-2t-hb0">
                     <rect key="frame" x="12" y="64" width="59" height="59"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="59" id="732-oD-yA5"/>
@@ -33,7 +33,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="坐落在美丽的泉城济南，它以健康的饮食理念，独特美味的口感和优质的服务，迅速赢绝对是" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsP-Dy-tHe">
-                    <rect key="frame" x="81" y="96" width="282" height="32"/>
+                    <rect key="frame" x="81" y="96" width="282" height="31.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -78,9 +78,16 @@
                         <constraint firstAttribute="trailing" secondItem="HB6-j3-uDX" secondAttribute="trailing" constant="12" id="rkG-Xb-s2s"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoX-2I-TWU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="146" id="3aR-Ln-hBg"/>
+                    </constraints>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="CoX-2I-TWU" secondAttribute="trailing" id="91k-j1-4ut"/>
                 <constraint firstItem="hHG-gG-RUM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CUG-pA-dJM"/>
                 <constraint firstAttribute="trailing" secondItem="CsP-Dy-tHe" secondAttribute="trailing" constant="12" id="GtG-Yt-AYu"/>
                 <constraint firstItem="CsP-Dy-tHe" firstAttribute="leading" secondItem="mTf-2t-hb0" secondAttribute="trailing" constant="10" id="Noy-Qb-jOs"/>
@@ -88,28 +95,31 @@
                 <constraint firstItem="mTf-2t-hb0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="Yk6-Sk-dPX"/>
                 <constraint firstItem="mTf-2t-hb0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Zmb-uc-JwK"/>
                 <constraint firstAttribute="bottom" secondItem="YcQ-b2-I7A" secondAttribute="bottom" id="b6k-37-uxC"/>
+                <constraint firstItem="CoX-2I-TWU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dDT-1d-LRX"/>
                 <constraint firstItem="aVw-uv-05i" firstAttribute="leading" secondItem="mTf-2t-hb0" secondAttribute="trailing" constant="10" id="eLc-Xh-uTP"/>
                 <constraint firstItem="hHG-gG-RUM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ihk-2i-TK2"/>
                 <constraint firstItem="YcQ-b2-I7A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="khj-my-vIt"/>
                 <constraint firstAttribute="trailing" secondItem="YcQ-b2-I7A" secondAttribute="trailing" id="nvG-cz-Wr0"/>
                 <constraint firstAttribute="bottom" secondItem="hHG-gG-RUM" secondAttribute="bottom" id="pGg-KD-z7U"/>
                 <constraint firstItem="aVw-uv-05i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="wz0-uc-fAm"/>
+                <constraint firstItem="CoX-2I-TWU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xot-Az-eJg"/>
                 <constraint firstAttribute="trailing" secondItem="hHG-gG-RUM" secondAttribute="trailing" id="zyT-TB-bmc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="backgroundImgView" destination="hHG-gG-RUM" id="pDB-Dy-xBj"/>
+                <outlet property="maskBtn" destination="CoX-2I-TWU" id="wSA-2d-8dR"/>
                 <outlet property="shopBrief" destination="CsP-Dy-tHe" id="Jj0-yM-5Y9"/>
                 <outlet property="shopImg" destination="mTf-2t-hb0" id="hJl-E6-UFV"/>
                 <outlet property="shopName" destination="aVw-uv-05i" id="PL1-Md-cC8"/>
                 <outlet property="smallView" destination="YcQ-b2-I7A" id="NzL-eJ-OyM"/>
                 <outlet property="takeoutBtn" destination="HB6-j3-uDX" id="yKm-Zs-rDP"/>
             </connections>
-            <point key="canvasLocation" x="-349" y="-129"/>
+            <point key="canvasLocation" x="-188" y="-256"/>
         </view>
     </objects>
     <resources>
         <image name="benefit" width="17" height="17"/>
-        <image name="shopImg" width="700" height="700"/>
+        <image name="图片预加载" width="125" height="125"/>
     </resources>
 </document>

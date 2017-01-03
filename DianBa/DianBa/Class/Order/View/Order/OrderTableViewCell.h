@@ -13,10 +13,15 @@ typedef void(^clickCar)(UIImageView *dropImage);
 
 @interface OrderTableViewCell : UITableViewCell
 
+/** 菜品图片 */
 @property (strong, nonatomic) IBOutlet UIImageView *shopImg;
+/** 菜名 */
 @property (strong, nonatomic) IBOutlet UILabel *dishesName;
+/** 月销售额 */
 @property (strong, nonatomic) IBOutlet UILabel *salesLabel;
+/** 好评率 */
 @property (strong, nonatomic) IBOutlet UILabel *praiseLabel;
+/** 价格 */
 @property (strong, nonatomic) IBOutlet UILabel *priceLabel;
 @property (strong, nonatomic) IBOutlet UIButton *addBtn;
 @property (strong, nonatomic) IBOutlet UIButton *subtractBtn;

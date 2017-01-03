@@ -21,13 +21,13 @@
 #import "OrderData.h"
 #import "OrderResult.h"
 #import "OrderMenu.h"
-#import "OrderMenuDetail.h"
 
 
 
 @interface OrderController ()<UITableViewDelegate,UITableViewDataSource>
 /** 门店菜品数组 */
 @property (nonatomic , strong) NSMutableArray *storesArr;
+@property (nonatomic, strong) OrderResult *result;
 @property (nonatomic , strong) OrderTableView *orderView;
 @property (nonatomic , strong) OrderHeaderView *headerView;
 @property (nonatomic , assign) BOOL isHiddenHot;
@@ -49,19 +49,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // 添加tableView
     [self.view addSubview:self.orderView];
-    
-    // 导航条属性
-    [self setUpNavigationBar];
-    
+    // 加载数据
+    [self loadData];
+}
+
+#pragma mark - 请求数据
+- (void)loadData{
+    [OrderData storeFoodWithStoreId:@"1" success:^(OrderResult *storeFoods) {
+        self.result = storeFoods;
+        NSArray *array = storeFoods.menu_info;
+        [self.storesArr addObjectsFromArray:array];
+        // 头视图内容
+        NSString *store_photo = self.result.store_photo;
+        [self.headerView.shopImg sd_setImageWithURL:[NSURL URLWithString:store_photo]];
+        self.headerView.shopName.text = self.result.store_name;
+        self.headerView.shopBrief.text = self.result.store_con;
+        self.headerView.backgroundImgView.image = [[[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:store_photo]]] blurImageWithRadius:25];
+        [self.orderView.ordertable reloadData];
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
 }
 
 #pragma mark - UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView.tag == 1) {
-        return 10;
+        return self.storesArr.count;
     }
     else if (tableView.tag == 2) {
         return self.typeArr.count;
@@ -69,7 +84,6 @@
         return 0;
     }
 }
-
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -84,6 +98,13 @@
             cell = [[[NSBundle mainBundle] loadNibNamed:@"OrderTableViewCell" owner:self options:nil]lastObject];
         }
         
+        OrderMenu *menu = self.storesArr[indexPath.row];
+        // 数据
+        [cell.shopImg sd_setImageWithURL:[NSURL URLWithString:menu.photo]];
+        cell.dishesName.text = menu.menu_name;
+        cell.salesLabel.text = [NSString stringWithFormat:@"月售%@份",menu.count_num];
+        cell.praiseLabel.text = [NSString stringWithFormat:@"好评率%@%%",menu.rated];
+        cell.priceLabel.text = menu.menu_price;
         // 购物车效果
         cell.clickCars = ^(UIImageView *imageView){
             CGRect rect = [tableView rectForRowAtIndexPath:indexPath];
@@ -93,31 +114,20 @@
             imageViewRect.origin.y = rect.origin.y+imageViewRect.origin.y;
             [[PurchaseCarAnimationTool shareTool]startAnimationandView:imageView andRect:imageViewRect andFinisnRect:CGPointMake(62, ScreenHeight-49) andFinishBlock:^(BOOL finisn){
                 
-                UIView *tabbarBtn = self.orderView.badgeLabel;
+                UIView *tabbarBtn = self.orderView.carBtn;
                 [PurchaseCarAnimationTool shakeAnimation:tabbarBtn];
             }];
         };
         
         cell.number = ^(NSInteger number){
-            
             self.orderView.priceLabel.text = [NSString stringWithFormat:@"%ld",[cell.priceLabel.text intValue] * number];
             if ([cell.numLabel.text intValue] > 0) {
-                self.orderView.badgeLabel.hidden = NO;
                 self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",number];
-                self.orderView.rMBLabel.textColor = [UIColor whiteColor];
-                self.orderView.priceLabel.textColor = [UIColor whiteColor];
-                self.orderView.balanceBtn.backgroundColor = [UIColor colorWithRed:253/250.0 green:173/250.0 blue:19/250.0 alpha:1.0];
-                [self.orderView.balanceBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                [self shoppingCarWithBadgeLabelIsHidden:NO rmbLabelColor:[UIColor whiteColor] priceLabelColor:[UIColor whiteColor] balanceBtnBackgroundColor:[UIColor colorWithRed:253/250.0 green:173/250.0 blue:19/250.0 alpha:1.0] balanceBtnTitleColor:[UIColor whiteColor]];
             }else{
-                self.orderView.badgeLabel.hidden = YES;
-                self.orderView.rMBLabel.textColor = [GVColor hexStringToColor:@"#b3b3b3"];
-                self.orderView.priceLabel.textColor = [GVColor hexStringToColor:@"#b3b3b3"];
-                self.orderView.balanceBtn.backgroundColor = [GVColor hexStringToColor:@"#7f7f7f"];
-                [self.orderView.balanceBtn setTitleColor:[GVColor hexStringToColor:@"#e6e6e6"] forState:UIControlStateNormal];
+                [self shoppingCarWithBadgeLabelIsHidden:YES rmbLabelColor:[GVColor hexStringToColor:@"#b3b3b3"] priceLabelColor:[GVColor hexStringToColor:@"#b3b3b3"] balanceBtnBackgroundColor:[GVColor hexStringToColor:@"#7f7f7f"] balanceBtnTitleColor:[GVColor hexStringToColor:@"#e6e6e6"]];
             }
-            
         };
-        
         return cell;
     }
     
@@ -152,9 +162,17 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+#pragma mark - 购物车
+- (void)shoppingCarWithBadgeLabelIsHidden:(BOOL)isHidden rmbLabelColor:(UIColor *)rmbColor priceLabelColor:(UIColor *)priceColor balanceBtnBackgroundColor:(UIColor *)balanceBColor balanceBtnTitleColor:(UIColor *)balanceTColor{
+    self.orderView.badgeLabel.hidden = isHidden;
+    self.orderView.rMBLabel.textColor = rmbColor;
+    self.orderView.priceLabel.textColor = priceColor;
+    self.orderView.balanceBtn.backgroundColor = balanceBColor;
+    [self.orderView.balanceBtn setTitleColor:balanceTColor forState:UIControlStateNormal];
+}
+
 #pragma mark - 侧滑按钮方法
 - (void)rowingBtnClcik:(UIButton *)sender{
-    
     _isHiddenHot = !_isHiddenHot;
     if (_isHiddenHot == YES) {
         [self showMenu];
@@ -191,8 +209,6 @@
     [_orderView addSubview:_orderView.hotPotTable];
     _orderView.rowingBtn.frame = CGRectMake(235, 378, 26, 80);
     [_orderView.ordertable addSubview:self.maskView];
-    [self.view addSubview:_orderView.returnBtn];
-    [self.view addSubview:_orderView.collectionBtn];
 }
 
 #pragma mark - 导航条的显示及隐藏
@@ -215,17 +231,14 @@
         [self setUpNavigationBar];
     }
 }
-
 // 添加导航条
 - (void)setUpNavigationBar{
-    self.navigationController.navigationBar.hidden = NO;
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:253/250.0 green:173/250.0 blue:19/250.0 alpha:1.0];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriginaName:@"the_arrow"] style:UIBarButtonItemStylePlain target:self action:nil];
-    self.navigationItem.title = self.headerView.shopName.text;
+    self.orderView.navigationView.hidden = NO;
+    self.orderView.titleLabel.text = self.headerView.shopName.text;
 }
 // 隐藏导航条
 -(void)hiddenNavigationBar{
-    self.navigationController.navigationBar.hidden = YES;
+    self.orderView.navigationView.hidden = YES;
 }
 
 #pragma mark - 懒加载
@@ -258,8 +271,6 @@
         // 固定按钮
         _isHiddenHot = YES;
         [_orderView.rowingBtn addTarget:self action:@selector(rowingBtnClcik:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:_orderView.returnBtn];
-        [self.view addSubview:_orderView.collectionBtn];
     }
     return _orderView;
 }
@@ -267,7 +278,6 @@
     if (_headerView == nil) {
         self.headerView = [[NSBundle mainBundle] loadNibNamed:@"OrderHeaderView" owner:self options:nil].lastObject;
         self.headerView.frame = CGRectMake(StartX, StartY, 100, 100);
-        
     }
     return _headerView;
 }
@@ -284,5 +294,10 @@
     }
     return _storesArr;
 }
-
+- (OrderResult *)result{
+    if (_result == nil) {
+        _result = [[OrderResult alloc] init];
+    }
+    return _result;
+}
 @end

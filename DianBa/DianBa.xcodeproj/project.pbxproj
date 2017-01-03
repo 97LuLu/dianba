@@ -44,6 +44,20 @@
 		EF24DAA21E133093006AA5E2 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DA9F1E133093006AA5E2 /* TabBarViewController.m */; };
 		EF24DAA51E1330C1006AA5E2 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DAA41E1330C1006AA5E2 /* UIImage+Image.m */; };
 		EF24DAA81E1330CE006AA5E2 /* UIBarButtonItem+BarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DAA71E1330CE006AA5E2 /* UIBarButtonItem+BarButtonItem.m */; };
+		EF532CF71E1B2DBC004EF262 /* ShopDtailsHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532CF61E1B2DBC004EF262 /* ShopDtailsHeader.m */; };
+		EF532D111E1B402B004EF262 /* ShopDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D101E1B402B004EF262 /* ShopDetailsController.m */; };
+		EF532D221E1B42CF004EF262 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D151E1B42CF004EF262 /* TAAbstractDotView.m */; };
+		EF532D231E1B42CF004EF262 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D171E1B42CF004EF262 /* TAAnimatedDotView.m */; };
+		EF532D241E1B42CF004EF262 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D191E1B42CF004EF262 /* TADotView.m */; };
+		EF532D251E1B42CF004EF262 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D1B1E1B42CF004EF262 /* TAPageControl.m */; };
+		EF532D261E1B42CF004EF262 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D1D1E1B42CF004EF262 /* SDCollectionViewCell.m */; };
+		EF532D271E1B42CF004EF262 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D1F1E1B42CF004EF262 /* SDCycleScrollView.m */; };
+		EF532D281E1B42CF004EF262 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D211E1B42CF004EF262 /* UIView+SDExtension.m */; };
+		EF532D2B1E1B4612004EF262 /* ShopDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D2A1E1B4612004EF262 /* ShopDetailsView.m */; };
+		EF532D2D1E1B4620004EF262 /* ShopDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF532D2C1E1B4620004EF262 /* ShopDetailsView.xib */; };
+		EF532D371E1B4BCB004EF262 /* StarsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D321E1B4BCB004EF262 /* StarsView.m */; };
+		EF532D381E1B4BCB004EF262 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D341E1B4BCB004EF262 /* StarView.m */; };
+		EF532D3B1E1B7C4C004EF262 /* ShopDetailsHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532D3A1E1B7C4C004EF262 /* ShopDetailsHeaders.m */; };
 		EFDD079B1E1146C00083C80A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD07991E1146C00083C80A /* Main.storyboard */; };
 		EFDD079D1E1146C00083C80A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDD079C1E1146C00083C80A /* Assets.xcassets */; };
 		EFDD07A01E1146C00083C80A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD079E1E1146C00083C80A /* LaunchScreen.storyboard */; };
@@ -63,7 +77,6 @@
 		EFF3E2C91E1699160057E775 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF3E2C41E1699160057E775 /* OrderTableViewCell.xib */; };
 		EFF3E2CC1E1699340057E775 /* OrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF3E2CB1E1699340057E775 /* OrderController.m */; };
 		EFF3E2D21E16994A0057E775 /* OrderMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF3E2CF1E16994A0057E775 /* OrderMenu.m */; };
-		EFF3E2D31E16994A0057E775 /* OrderMenuDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF3E2D11E16994A0057E775 /* OrderMenuDetail.m */; };
 		EFF3E2D81E16999F0057E775 /* PurchaseCarAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF3E2D71E16999F0057E775 /* PurchaseCarAnimationTool.m */; };
 		EFF3E2DB1E1699A90057E775 /* GVColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF3E2DA1E1699A90057E775 /* GVColor.m */; };
 		EFF3E2DE1E1699B70057E775 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF3E2DD1E1699B70057E775 /* UIImage+ImageEffects.m */; };
@@ -138,6 +151,33 @@
 		EF24DAA41E1330C1006AA5E2 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		EF24DAA61E1330CE006AA5E2 /* UIBarButtonItem+BarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BarButtonItem.h"; sourceTree = "<group>"; };
 		EF24DAA71E1330CE006AA5E2 /* UIBarButtonItem+BarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BarButtonItem.m"; sourceTree = "<group>"; };
+		EF532CF51E1B2DBC004EF262 /* ShopDtailsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDtailsHeader.h; sourceTree = "<group>"; };
+		EF532CF61E1B2DBC004EF262 /* ShopDtailsHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDtailsHeader.m; sourceTree = "<group>"; };
+		EF532D0F1E1B402B004EF262 /* ShopDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailsController.h; sourceTree = "<group>"; };
+		EF532D101E1B402B004EF262 /* ShopDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailsController.m; sourceTree = "<group>"; };
+		EF532D141E1B42CF004EF262 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		EF532D151E1B42CF004EF262 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		EF532D161E1B42CF004EF262 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		EF532D171E1B42CF004EF262 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		EF532D181E1B42CF004EF262 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		EF532D191E1B42CF004EF262 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		EF532D1A1E1B42CF004EF262 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		EF532D1B1E1B42CF004EF262 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		EF532D1C1E1B42CF004EF262 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		EF532D1D1E1B42CF004EF262 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		EF532D1E1E1B42CF004EF262 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		EF532D1F1E1B42CF004EF262 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		EF532D201E1B42CF004EF262 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		EF532D211E1B42CF004EF262 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		EF532D291E1B4612004EF262 /* ShopDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailsView.h; sourceTree = "<group>"; };
+		EF532D2A1E1B4612004EF262 /* ShopDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailsView.m; sourceTree = "<group>"; };
+		EF532D2C1E1B4620004EF262 /* ShopDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopDetailsView.xib; sourceTree = "<group>"; };
+		EF532D311E1B4BCB004EF262 /* StarsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarsView.h; sourceTree = "<group>"; };
+		EF532D321E1B4BCB004EF262 /* StarsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarsView.m; sourceTree = "<group>"; };
+		EF532D331E1B4BCB004EF262 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
+		EF532D341E1B4BCB004EF262 /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
+		EF532D391E1B7C4C004EF262 /* ShopDetailsHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailsHeaders.h; sourceTree = "<group>"; };
+		EF532D3A1E1B7C4C004EF262 /* ShopDetailsHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailsHeaders.m; sourceTree = "<group>"; };
 		EFDD078D1E1146C00083C80A /* DianBa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianBa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDD079A1E1146C00083C80A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFDD079C1E1146C00083C80A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,8 +211,6 @@
 		EFF3E2CB1E1699340057E775 /* OrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderController.m; sourceTree = "<group>"; };
 		EFF3E2CE1E16994A0057E775 /* OrderMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMenu.h; sourceTree = "<group>"; };
 		EFF3E2CF1E16994A0057E775 /* OrderMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMenu.m; sourceTree = "<group>"; };
-		EFF3E2D01E16994A0057E775 /* OrderMenuDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMenuDetail.h; sourceTree = "<group>"; };
-		EFF3E2D11E16994A0057E775 /* OrderMenuDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMenuDetail.m; sourceTree = "<group>"; };
 		EFF3E2D61E16999F0057E775 /* PurchaseCarAnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseCarAnimationTool.h; sourceTree = "<group>"; };
 		EFF3E2D71E16999F0057E775 /* PurchaseCarAnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseCarAnimationTool.m; sourceTree = "<group>"; };
 		EFF3E2D91E1699A90057E775 /* GVColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVColor.h; sourceTree = "<group>"; };
@@ -227,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				EFF3E29B1E1698510057E775 /* Tool */,
+				EF65716E1E1A773400255B06 /* ShopDetails */,
 				EF24DA791E132FD0006AA5E2 /* TakeOut */,
 				EF24DA391E132FD0006AA5E2 /* HomePage */,
 				EF24DA4F1E132FD0006AA5E2 /* Mine */,
@@ -385,9 +424,9 @@
 		EF24DA551E132FD0006AA5E2 /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				EFF3E2CD1E16993F0057E775 /* Model */,
-				EFF3E2AC1E1698F50057E775 /* View */,
 				EF24DA561E132FD0006AA5E2 /* Controller */,
+				EFF3E2AC1E1698F50057E775 /* View */,
+				EFF3E2CD1E16993F0057E775 /* Model */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -467,6 +506,8 @@
 		EF24DA631E132FD0006AA5E2 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				EF532D2E1E1B4BCB004EF262 /* StarView */,
+				EF532D121E1B42CF004EF262 /* SDCycleScrollView */,
 				EFF3E2D41E1699870057E775 /* Animation */,
 				EFF3E2D51E1699870057E775 /* GVColor */,
 				EF24DA641E132FD0006AA5E2 /* usr */,
@@ -551,6 +592,86 @@
 		EF24DA7E1E132FD0006AA5E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF532D121E1B42CF004EF262 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				EF532D131E1B42CF004EF262 /* PageControl */,
+				EF532D1C1E1B42CF004EF262 /* SDCollectionViewCell.h */,
+				EF532D1D1E1B42CF004EF262 /* SDCollectionViewCell.m */,
+				EF532D1E1E1B42CF004EF262 /* SDCycleScrollView.h */,
+				EF532D1F1E1B42CF004EF262 /* SDCycleScrollView.m */,
+				EF532D201E1B42CF004EF262 /* UIView+SDExtension.h */,
+				EF532D211E1B42CF004EF262 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		EF532D131E1B42CF004EF262 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				EF532D141E1B42CF004EF262 /* TAAbstractDotView.h */,
+				EF532D151E1B42CF004EF262 /* TAAbstractDotView.m */,
+				EF532D161E1B42CF004EF262 /* TAAnimatedDotView.h */,
+				EF532D171E1B42CF004EF262 /* TAAnimatedDotView.m */,
+				EF532D181E1B42CF004EF262 /* TADotView.h */,
+				EF532D191E1B42CF004EF262 /* TADotView.m */,
+				EF532D1A1E1B42CF004EF262 /* TAPageControl.h */,
+				EF532D1B1E1B42CF004EF262 /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		EF532D2E1E1B4BCB004EF262 /* StarView */ = {
+			isa = PBXGroup;
+			children = (
+				EF532D311E1B4BCB004EF262 /* StarsView.h */,
+				EF532D321E1B4BCB004EF262 /* StarsView.m */,
+				EF532D331E1B4BCB004EF262 /* StarView.h */,
+				EF532D341E1B4BCB004EF262 /* StarView.m */,
+			);
+			path = StarView;
+			sourceTree = "<group>";
+		};
+		EF65716E1E1A773400255B06 /* ShopDetails */ = {
+			isa = PBXGroup;
+			children = (
+				EF65716F1E1A773400255B06 /* Controller */,
+				EF6571701E1A773400255B06 /* Model */,
+				EF6571711E1A773400255B06 /* View */,
+			);
+			path = ShopDetails;
+			sourceTree = "<group>";
+		};
+		EF65716F1E1A773400255B06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF532D0F1E1B402B004EF262 /* ShopDetailsController.h */,
+				EF532D101E1B402B004EF262 /* ShopDetailsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF6571701E1A773400255B06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF6571711E1A773400255B06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF532D291E1B4612004EF262 /* ShopDetailsView.h */,
+				EF532D2A1E1B4612004EF262 /* ShopDetailsView.m */,
+				EF532D2C1E1B4620004EF262 /* ShopDetailsView.xib */,
+				EF532CF51E1B2DBC004EF262 /* ShopDtailsHeader.h */,
+				EF532CF61E1B2DBC004EF262 /* ShopDtailsHeader.m */,
+				EF532D391E1B7C4C004EF262 /* ShopDetailsHeaders.h */,
+				EF532D3A1E1B7C4C004EF262 /* ShopDetailsHeaders.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -693,8 +814,6 @@
 			children = (
 				EFF3E2CE1E16994A0057E775 /* OrderMenu.h */,
 				EFF3E2CF1E16994A0057E775 /* OrderMenu.m */,
-				EFF3E2D01E16994A0057E775 /* OrderMenuDetail.h */,
-				EFF3E2D11E16994A0057E775 /* OrderMenuDetail.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -799,6 +918,7 @@
 				0000BEDE1E1359D200F3A049 /* SearchHistoryRecordfooter.xib in Resources */,
 				EFDD079D1E1146C00083C80A /* Assets.xcassets in Resources */,
 				EFDD079B1E1146C00083C80A /* Main.storyboard in Resources */,
+				EF532D2D1E1B4620004EF262 /* ShopDetailsView.xib in Resources */,
 				EF24DA8E1E132FD0006AA5E2 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				EFF3E2C91E1699160057E775 /* OrderTableViewCell.xib in Resources */,
 			);
@@ -866,11 +986,14 @@
 				EF24DA841E132FD0006AA5E2 /* MineViewController.m in Sources */,
 				EF24DA7F1E132FD0006AA5E2 /* HomePageViewController.m in Sources */,
 				EFF3E2B91E16990D0057E775 /* MenuCell.m in Sources */,
+				EF532D2B1E1B4612004EF262 /* ShopDetailsView.m in Sources */,
 				EF24DAA81E1330CE006AA5E2 /* UIBarButtonItem+BarButtonItem.m in Sources */,
 				EF24DA851E132FD0006AA5E2 /* OrderFormViewController.m in Sources */,
-				EFF3E2D31E16994A0057E775 /* OrderMenuDetail.m in Sources */,
+				EF532D381E1B4BCB004EF262 /* StarView.m in Sources */,
+				EF532CF71E1B2DBC004EF262 /* ShopDtailsHeader.m in Sources */,
 				00D8A5FF1E1615960085441B /* scanQRViewController.m in Sources */,
 				EF24DA891E132FD0006AA5E2 /* HanyuPinyinOutputFormat.m in Sources */,
+				EF532D271E1B42CF004EF262 /* SDCycleScrollView.m in Sources */,
 				EFF3E2D81E16999F0057E775 /* PurchaseCarAnimationTool.m in Sources */,
 				EF24DA861E132FD0006AA5E2 /* UIBarButtonItem+Extension.m in Sources */,
 				EFF3E2A81E1698700057E775 /* OrderParam.m in Sources */,
@@ -881,14 +1004,18 @@
 				0000BEDD1E1359D200F3A049 /* SearchHistoryRecordfooter.m in Sources */,
 				EFF3E2B21E1699000057E775 /* MaskView.m in Sources */,
 				009038CE1E15250400EE694F /* popUpView.m in Sources */,
+				EF532D261E1B42CF004EF262 /* SDCollectionViewCell.m in Sources */,
 				0000BEDF1E1359D200F3A049 /* SearchRecordTableViewCell.m in Sources */,
+				EF532D221E1B42CF004EF262 /* TAAbstractDotView.m in Sources */,
 				0000BED91E1359D200F3A049 /* DQTextFild.m in Sources */,
 				EFF3E2D21E16994A0057E775 /* OrderMenu.m in Sources */,
 				EF24DA881E132FD0006AA5E2 /* ChineseToPinyinResource.m in Sources */,
 				EF24DA801E132FD0006AA5E2 /* CityList.m in Sources */,
+				EF532D111E1B402B004EF262 /* ShopDetailsController.m in Sources */,
 				0000BED81E1359D200F3A049 /* DQHotSearchViewController.m in Sources */,
 				EF24DA871E132FD0006AA5E2 /* ChineseInclude.m in Sources */,
 				EF24DA8C1E132FD0006AA5E2 /* PinYinForObjc.m in Sources */,
+				EF532D3B1E1B7C4C004EF262 /* ShopDetailsHeaders.m in Sources */,
 				EFF3E2C71E1699160057E775 /* OrderTableView.m in Sources */,
 				EF24DAA51E1330C1006AA5E2 /* UIImage+Image.m in Sources */,
 				EFF3E2A21E16985B0057E775 /* MHHttpTool.m in Sources */,
@@ -899,11 +1026,16 @@
 				EF24DA901E132FD0006AA5E2 /* TakeOutViewController.m in Sources */,
 				EFF3E2DE1E1699B70057E775 /* UIImage+ImageEffects.m in Sources */,
 				EFF3E2BB1E16990D0057E775 /* MenuHeaderView.m in Sources */,
+				EF532D371E1B4BCB004EF262 /* StarsView.m in Sources */,
 				0000BEDA1E1359D200F3A049 /* HotSearchCollectionViewCell.m in Sources */,
 				EFF3E2CC1E1699340057E775 /* OrderController.m in Sources */,
+				EF532D251E1B42CF004EF262 /* TAPageControl.m in Sources */,
+				EF532D281E1B42CF004EF262 /* UIView+SDExtension.m in Sources */,
 				EF24DA8B1E132FD0006AA5E2 /* PinyinFormatter.m in Sources */,
 				EF24DA821E132FD0006AA5E2 /* CityCollectionHeadView.m in Sources */,
 				EFF3E2C51E1699160057E775 /* OrderHeaderView.m in Sources */,
+				EF532D231E1B42CF004EF262 /* TAAnimatedDotView.m in Sources */,
+				EF532D241E1B42CF004EF262 /* TADotView.m in Sources */,
 				EF24DA8A1E132FD0006AA5E2 /* NSString+PinYin4Cocoa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
