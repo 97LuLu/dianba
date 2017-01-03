@@ -23,7 +23,6 @@
 #import "OrderMenu.h"
 
 
-
 @interface OrderController ()<UITableViewDelegate,UITableViewDataSource>
 /** 门店菜品数组 */
 @property (nonatomic , strong) NSMutableArray *storesArr;
@@ -45,6 +44,7 @@
     self.navigationController.navigationBar.hidden = YES;
     _orderView.ordertable.tableHeaderView.height = OrderHeaderHeight;
     _orderView.hotPotTable.tableHeaderView.height = 55;
+    self.tabBarController.tabBar.hidden = YES;
 }
 
 - (void)viewDidLoad {
@@ -88,7 +88,7 @@
     return 1;
 }
 
-#warning 点击时的文字颜色
+#pragma mark warning 点击时的文字颜色
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (tableView.tag == 1) {

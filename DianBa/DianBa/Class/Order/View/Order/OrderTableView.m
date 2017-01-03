@@ -131,6 +131,7 @@
         _returnBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _returnBtn.frame = CGRectMake(12, 34, 11, 16);
         [_returnBtn setImage:[UIImage imageNamed:@"the-arrow-"] forState:UIControlStateNormal];
+
     }
     
     return _returnBtn;
@@ -142,6 +143,7 @@
        _collectionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _collectionBtn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 30, 34, 18, 17);
         [_collectionBtn setImage:[UIImage imageNamed:@"collect_down"] forState:UIControlStateNormal];
+
     }
     
     return _collectionBtn;

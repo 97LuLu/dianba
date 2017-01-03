@@ -20,11 +20,11 @@
     // Override point for customization after application launch.
     
     //初始化
-    self.window = [[UIWindow alloc] init];
-    self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[OrderController alloc] init]];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
 
+    self.window.rootViewController =[[TabBarViewController alloc] init];
+    
     return YES;
 }
 
