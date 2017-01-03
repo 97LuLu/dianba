@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,28 +12,14 @@
             <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0852" translatesAutoresizingMaskIntoConstraints="NO" id="2r3-Rz-IhG">
-                    <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="扫一扫" translatesAutoresizingMaskIntoConstraints="NO" id="Vei-er-xNz">
-                    <rect key="frame" x="13" y="24" width="25" height="25"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0852" translatesAutoresizingMaskIntoConstraints="NO" id="2r3-Rz-IhG"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scan2x" translatesAutoresizingMaskIntoConstraints="NO" id="Vei-er-xNz">
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="9E2-Dt-C9I"/>
                         <constraint firstAttribute="width" constant="25" id="JV5-fu-fcw"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjZ-Ma-A44">
-                    <rect key="frame" x="54" y="23" width="53" height="25"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="25" id="IeG-8f-KNm"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="扫一扫">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpE-Is-DRK">
-                    <rect key="frame" x="12" y="57" width="96" height="1"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="t1j-sv-leY"/>
@@ -45,15 +28,13 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="二维码扫描" translatesAutoresizingMaskIntoConstraints="NO" id="vhJ-hy-o8q">
-                    <rect key="frame" x="13" y="66" width="25" height="25"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QR2x" translatesAutoresizingMaskIntoConstraints="NO" id="vhJ-hy-o8q">
                     <constraints>
                         <constraint firstAttribute="width" constant="25" id="D8o-Lc-mUu"/>
                         <constraint firstAttribute="height" constant="25" id="yOF-Ro-fkI"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFZ-45-HRz">
-                    <rect key="frame" x="54" y="65" width="53" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="O5p-qH-CGt"/>
                     </constraints>
@@ -63,7 +44,6 @@
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5Z-96-h2X">
-                    <rect key="frame" x="12" y="100" width="96" height="1"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="iJv-nX-V9u"/>
@@ -73,19 +53,27 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="登录" translatesAutoresizingMaskIntoConstraints="NO" id="e4e-Qo-1q4">
-                    <rect key="frame" x="13" y="109" width="25" height="25"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="25" id="lnN-CC-JqK"/>
                         <constraint firstAttribute="height" constant="25" id="rMd-QC-8bx"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfH-SD-bYw">
-                    <rect key="frame" x="54" y="109" width="53" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="3uf-jI-gqA"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="登    录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjZ-Ma-A44">
+                    <frame key="frameInset" minX="54" minY="24" width="53" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="IeG-8f-KNm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="扫一扫">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
@@ -125,13 +113,13 @@
                 <outlet property="paymentQrButton" destination="qFZ-45-HRz" id="4fo-7F-0xV"/>
                 <outlet property="sweepQrButton" destination="yjZ-Ma-A44" id="BDQ-Yd-rEM"/>
             </connections>
-            <point key="canvasLocation" x="-581" y="-111"/>
+            <point key="canvasLocation" x="-665" y="-213"/>
         </view>
     </objects>
     <resources>
         <image name="IMG_0852" width="166" height="134"/>
-        <image name="二维码扫描" width="16" height="16"/>
-        <image name="扫一扫" width="16" height="16"/>
+        <image name="QR2x" width="15" height="15"/>
+        <image name="Scan2x" width="15" height="15"/>
         <image name="登录" width="16" height="16"/>
     </resources>
 </document>

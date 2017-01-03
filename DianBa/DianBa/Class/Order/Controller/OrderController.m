@@ -24,7 +24,6 @@
 #import "OrderMenuDetail.h"
 
 
-
 @interface OrderController ()<UITableViewDelegate,UITableViewDataSource>
 /** 门店菜品数组 */
 @property (nonatomic , strong) NSMutableArray *storesArr;
@@ -45,6 +44,7 @@
     self.navigationController.navigationBar.hidden = YES;
     _orderView.ordertable.tableHeaderView.height = OrderHeaderHeight;
     _orderView.hotPotTable.tableHeaderView.height = 55;
+    self.tabBarController.tabBar.hidden = YES;
 }
 
 - (void)viewDidLoad {
@@ -55,7 +55,14 @@
     
     // 导航条属性
     [self setUpNavigationBar];
-    
+    [self.orderView.returnBtn  addTarget:self action:@selector(returnBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+
+}
+//返回上一层事件
+-(void)returnBtnClick:(UIButton*)btn
+{
+
+    [self.navigationController  popViewControllerAnimated:YES];
 }
 
 #pragma mark - UITableViewDataSource
@@ -74,7 +81,7 @@
     return 1;
 }
 
-#warning 点击时的文字颜色
+#pragma mark warning 点击时的文字颜色
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (tableView.tag == 1) {
@@ -191,8 +198,7 @@
     [_orderView addSubview:_orderView.hotPotTable];
     _orderView.rowingBtn.frame = CGRectMake(235, 378, 26, 80);
     [_orderView.ordertable addSubview:self.maskView];
-    [self.view addSubview:_orderView.returnBtn];
-    [self.view addSubview:_orderView.collectionBtn];
+
 }
 
 #pragma mark - 导航条的显示及隐藏
@@ -220,7 +226,8 @@
 - (void)setUpNavigationBar{
     self.navigationController.navigationBar.hidden = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:253/250.0 green:173/250.0 blue:19/250.0 alpha:1.0];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriginaName:@"the_arrow"] style:UIBarButtonItemStylePlain target:self action:nil];
+    //导航条按钮颜色
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationItem.title = self.headerView.shopName.text;
 }
 // 隐藏导航条
@@ -258,8 +265,7 @@
         // 固定按钮
         _isHiddenHot = YES;
         [_orderView.rowingBtn addTarget:self action:@selector(rowingBtnClcik:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:_orderView.returnBtn];
-        [self.view addSubview:_orderView.collectionBtn];
+
     }
     return _orderView;
 }

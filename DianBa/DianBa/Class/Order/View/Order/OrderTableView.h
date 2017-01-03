@@ -12,9 +12,9 @@
 
 @property (nonatomic , strong) UITableView *ordertable;
 @property (nonatomic , strong) UITableView *hotPotTable;
-@property (nonatomic , strong) UIButton *rowingBtn;
-@property (nonatomic , strong) UIButton *returnBtn;
-@property (nonatomic , strong) UIButton *collectionBtn;
+@property (nonatomic , strong) UIButton *rowingBtn;//两表切换
+@property (nonatomic , strong) UIButton *returnBtn;//返回按钮
+@property (nonatomic , strong) UIButton *collectionBtn;//收藏
 /*-------------------  购物车  -----------------------*/
 @property (nonatomic , strong) UIView *carView;
 @property (strong , nonatomic) UIButton *carBtn;

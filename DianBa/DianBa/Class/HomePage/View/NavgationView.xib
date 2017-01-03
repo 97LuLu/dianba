@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,7 +13,6 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrows" translatesAutoresizingMaskIntoConstraints="NO" id="BaG-kX-QnI">
-                    <rect key="frame" x="68" y="17" width="11" height="7"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="7" id="278-ED-jVm"/>
                         <constraint firstAttribute="height" constant="7" id="3LG-2o-PL5"/>
@@ -25,11 +21,9 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXC-T4-IFZ">
-                    <rect key="frame" x="107" y="5" width="202" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-NX-kpN">
-                    <rect key="frame" x="335" y="10" width="25" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="vDd-Vn-4Hq"/>
                         <constraint firstAttribute="width" constant="25" id="xIa-I3-6rH"/>
@@ -37,7 +31,6 @@
                     <state key="normal" title="Button" image="more"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PC-af-Y4k">
-                    <rect key="frame" x="12" y="10" width="49" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <state key="normal" title="雷冬凯">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,7 +57,7 @@
                 <outlet property="cityButton" destination="0PC-af-Y4k" id="Siz-Cc-juK"/>
                 <outlet property="searchButton" destination="iXC-T4-IFZ" id="dSR-tK-L42"/>
             </connections>
-            <point key="canvasLocation" x="15.5" y="143"/>
+            <point key="canvasLocation" x="31" y="94"/>
         </view>
     </objects>
     <resources>
