@@ -43,7 +43,7 @@
     rotateAnimation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     CAAnimationGroup *groups = [CAAnimationGroup animation];
     groups.animations = @[pathAnimation,rotateAnimation];
-    groups.duration = 1.2f;
+    groups.duration = 0.6f;
     groups.removedOnCompletion=NO;
     groups.fillMode=kCAFillModeForwards;
     groups.delegate = self;

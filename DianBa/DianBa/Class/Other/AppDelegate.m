@@ -7,9 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import "OrderController.h"
+#import "ShopDetailsController.h"
 #import "TabBarViewController.h"
+<<<<<<< HEAD
 #import "DetailsTableViewController.h"
+=======
+#import "OrderController.h"
+>>>>>>> 57d20889dc8024891ee9196c5fa0f6b36cec45c1
 
 @interface AppDelegate ()
 @end
@@ -20,11 +24,19 @@
     // Override point for customization after application launch.
     
     //初始化
+<<<<<<< HEAD
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[DetailsTableViewController alloc] init]];
+=======
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+>>>>>>> 57d20889dc8024891ee9196c5fa0f6b36cec45c1
     [self.window makeKeyAndVisible];
 
+//    self.window.rootViewController =[[TabBarViewController alloc] init];
+
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ShopDetailsController alloc] init]];
+    
     return YES;
 }
 

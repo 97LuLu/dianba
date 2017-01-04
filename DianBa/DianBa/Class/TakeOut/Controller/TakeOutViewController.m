@@ -7,8 +7,13 @@
 //
 
 #import "TakeOutViewController.h"
+#import "TakeView.h"
+#import "HomeTableViewCell.h"
 
-@interface TakeOutViewController ()
+@interface TakeOutViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    TakeView  *takeView;
+}
 
 @end
 
@@ -16,9 +21,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    takeView = [[TakeView  alloc]initWithFrame:self.view.frame];
+    takeView.taleTable.delegate = self;
+    takeView.taleTable.dataSource = self;
+    [self.view  addSubview:takeView];
+    
+    
 }
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 50;
+}
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   static NSString *takeC = @"HomeTableViewCell";
+    HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:takeC];
+    if(!cell)
+    {
+        cell = [[HomeTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:takeC];
+    }
+    return cell;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

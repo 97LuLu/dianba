@@ -7,12 +7,7 @@
 //
 
 #import "OrderMenu.h"
-#import "OrderMenuDetail.h"
 
 @implementation OrderMenu
-
-+ (NSDictionary *)mj_objectClassInArray{
-    return @{@"info_list":[OrderMenuDetail class]};
-}
 
 @end

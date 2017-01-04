@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,10 +13,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hHG-gG-RUM">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopImg" translatesAutoresizingMaskIntoConstraints="NO" id="mTf-2t-hb0">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="图片预加载" translatesAutoresizingMaskIntoConstraints="NO" id="mTf-2t-hb0">
                     <rect key="frame" x="12" y="64" width="59" height="59"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="59" id="732-oD-yA5"/>
@@ -27,29 +23,25 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微动点大饭店西三旗店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVw-uv-05i">
-                    <rect key="frame" x="81" y="64" width="190" height="23"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="坐落在美丽的泉城济南，它以健康的饮食理念，独特美味的口感和优质的服务，迅速赢绝对是" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsP-Dy-tHe">
-                    <rect key="frame" x="81" y="96" width="282" height="32"/>
+                    <rect key="frame" x="81" y="96" width="282" height="31.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YcQ-b2-I7A">
-                    <rect key="frame" x="0.0" y="146" width="375" height="20"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benefit" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-hG-tJa">
-                            <rect key="frame" x="12" y="2" width="17" height="17"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="17" id="CSd-i9-5x7"/>
                                 <constraint firstAttribute="height" constant="17" id="f0S-ad-pTv"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="满100减10元，满200减30。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhd-9f-pRy">
-                            <rect key="frame" x="40" y="2" width="170" height="17"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="17" id="fEX-vh-XN7"/>
                             </constraints>
@@ -58,7 +50,6 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB6-j3-uDX">
-                            <rect key="frame" x="286" y="2" width="77" height="17"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="17" id="z19-JT-anp"/>
                             </constraints>
@@ -78,9 +69,16 @@
                         <constraint firstAttribute="trailing" secondItem="HB6-j3-uDX" secondAttribute="trailing" constant="12" id="rkG-Xb-s2s"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoX-2I-TWU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="146" id="3aR-Ln-hBg"/>
+                    </constraints>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="CoX-2I-TWU" secondAttribute="trailing" id="91k-j1-4ut"/>
                 <constraint firstItem="hHG-gG-RUM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CUG-pA-dJM"/>
                 <constraint firstAttribute="trailing" secondItem="CsP-Dy-tHe" secondAttribute="trailing" constant="12" id="GtG-Yt-AYu"/>
                 <constraint firstItem="CsP-Dy-tHe" firstAttribute="leading" secondItem="mTf-2t-hb0" secondAttribute="trailing" constant="10" id="Noy-Qb-jOs"/>
@@ -88,28 +86,31 @@
                 <constraint firstItem="mTf-2t-hb0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="Yk6-Sk-dPX"/>
                 <constraint firstItem="mTf-2t-hb0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Zmb-uc-JwK"/>
                 <constraint firstAttribute="bottom" secondItem="YcQ-b2-I7A" secondAttribute="bottom" id="b6k-37-uxC"/>
+                <constraint firstItem="CoX-2I-TWU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dDT-1d-LRX"/>
                 <constraint firstItem="aVw-uv-05i" firstAttribute="leading" secondItem="mTf-2t-hb0" secondAttribute="trailing" constant="10" id="eLc-Xh-uTP"/>
                 <constraint firstItem="hHG-gG-RUM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ihk-2i-TK2"/>
                 <constraint firstItem="YcQ-b2-I7A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="khj-my-vIt"/>
                 <constraint firstAttribute="trailing" secondItem="YcQ-b2-I7A" secondAttribute="trailing" id="nvG-cz-Wr0"/>
                 <constraint firstAttribute="bottom" secondItem="hHG-gG-RUM" secondAttribute="bottom" id="pGg-KD-z7U"/>
                 <constraint firstItem="aVw-uv-05i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="wz0-uc-fAm"/>
+                <constraint firstItem="CoX-2I-TWU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xot-Az-eJg"/>
                 <constraint firstAttribute="trailing" secondItem="hHG-gG-RUM" secondAttribute="trailing" id="zyT-TB-bmc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="backgroundImgView" destination="hHG-gG-RUM" id="pDB-Dy-xBj"/>
+                <outlet property="maskBtn" destination="CoX-2I-TWU" id="wSA-2d-8dR"/>
                 <outlet property="shopBrief" destination="CsP-Dy-tHe" id="Jj0-yM-5Y9"/>
                 <outlet property="shopImg" destination="mTf-2t-hb0" id="hJl-E6-UFV"/>
                 <outlet property="shopName" destination="aVw-uv-05i" id="PL1-Md-cC8"/>
                 <outlet property="smallView" destination="YcQ-b2-I7A" id="NzL-eJ-OyM"/>
                 <outlet property="takeoutBtn" destination="HB6-j3-uDX" id="yKm-Zs-rDP"/>
             </connections>
-            <point key="canvasLocation" x="-349" y="-129"/>
+            <point key="canvasLocation" x="-188" y="-256"/>
         </view>
     </objects>
     <resources>
         <image name="benefit" width="17" height="17"/>
-        <image name="shopImg" width="700" height="700"/>
+        <image name="图片预加载" width="125" height="125"/>
     </resources>
 </document>

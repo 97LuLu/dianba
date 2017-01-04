@@ -16,11 +16,16 @@
         [self addSubview:self.ordertable];
         [self addSubview:self.rowingBtn];
         [self addSubview:self.carView];
+        [self addSubview:self.navigationView];
+        [self.navigationView addSubview:self.nReturnBtn];
+        [self.navigationView addSubview:self.nCollectionBtn];
+        [self.navigationView addSubview:self.titleLabel];
         [self.carView addSubview:self.carBtn];
         [self.carBtn addSubview:self.badgeLabel];
         [self.carView addSubview:self.rMBLabel];
         [self.carView addSubview:self.priceLabel];
         [self.carView addSubview:self.balanceBtn];
+        
     }
     
     return self;
@@ -90,7 +95,7 @@
 -(UITableView *)ordertable{
     
     if (_ordertable == nil) {
-        self.ordertable = [[UITableView alloc] initWithFrame:CGRectMake(StartX, -20, self.bounds.size.width, self.bounds.size.height + 20) style:UITableViewStylePlain];
+        self.ordertable = [[UITableView alloc] initWithFrame:CGRectMake(StartX, -20, self.bounds.size.width, self.bounds.size.height - 20) style:UITableViewStylePlain];
         self.ordertable.tag = 1;
     }
     
@@ -126,6 +131,7 @@
         _returnBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _returnBtn.frame = CGRectMake(12, 34, 11, 16);
         [_returnBtn setImage:[UIImage imageNamed:@"the-arrow-"] forState:UIControlStateNormal];
+
     }
     
     return _returnBtn;
@@ -137,9 +143,53 @@
        _collectionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _collectionBtn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 30, 34, 18, 17);
         [_collectionBtn setImage:[UIImage imageNamed:@"collect_down"] forState:UIControlStateNormal];
+
     }
     
     return _collectionBtn;
+}
+
+- (UIView *)navigationView{
+    if (_navigationView == nil) {
+        _navigationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 64)];
+        _navigationView.backgroundColor = [UIColor colorWithRed:253/250.0 green:173/250.0 blue:19/250.0 alpha:1.0];
+        _navigationView.hidden = YES;
+    }
+    return _navigationView;
+}
+
+-(UIButton *)nReturnBtn{
+    
+    if (_nReturnBtn == nil) {
+        
+        _nReturnBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _nReturnBtn.frame = CGRectMake(12, 34, 11, 16);
+        [_nReturnBtn setImage:[UIImage imageNamed:@"the-arrow-"] forState:UIControlStateNormal];
+    }
+    
+    return _nReturnBtn;
+}
+
+- (UIButton *)nCollectionBtn{
+    
+    if (_nCollectionBtn == nil) {
+        _nCollectionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _nCollectionBtn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 30, 34, 18, 17);
+        [_nCollectionBtn setImage:[UIImage imageNamed:@"collect_down"] forState:UIControlStateNormal];
+    }
+    
+    return _nCollectionBtn;
+}
+
+- (UILabel *)titleLabel{
+    if (_titleLabel == nil) {
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 34, ScreenWidth - 200, 20)];
+        _titleLabel.textColor = [GVColor hexStringToColor:@"#ffffff"];
+        _titleLabel.font = [UIFont systemFontOfSize:19];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        
+    }
+    return _titleLabel;
 }
 
 @end

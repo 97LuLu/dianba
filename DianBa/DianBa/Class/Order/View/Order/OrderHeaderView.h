@@ -17,4 +17,6 @@
 @property (strong, nonatomic) IBOutlet UIView *smallView;
 @property (strong, nonatomic) IBOutlet UIButton *takeoutBtn;
 
+@property (strong, nonatomic) IBOutlet UIButton *maskBtn;
+
 @end
