@@ -17,6 +17,9 @@
 		0000BEDF1E1359D200F3A049 /* SearchRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000BED71E1359D200F3A049 /* SearchRecordTableViewCell.m */; };
 		0000BEE51E13DAA900F3A049 /* NavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000BEE41E13DAA900F3A049 /* NavgationView.m */; };
 		0000BEE71E13DACA00F3A049 /* NavgationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0000BEE61E13DACA00F3A049 /* NavgationView.xib */; };
+		0032D50F1E1A733300CEF4B6 /* DetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0032D50E1E1A733300CEF4B6 /* DetailsTableViewController.m */; };
+		008C30BF1E1741F5003FA15A /* FoodEvaluateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C30BD1E1741F5003FA15A /* FoodEvaluateTableViewCell.m */; };
+		008C30C01E1741F5003FA15A /* FoodEvaluateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008C30BE1E1741F5003FA15A /* FoodEvaluateTableViewCell.xib */; };
 		009038CE1E15250400EE694F /* popUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009038CD1E15250400EE694F /* popUpView.m */; };
 		009038D01E15251600EE694F /* popUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009038CF1E15251600EE694F /* popUpView.xib */; };
 		00D8A5FF1E1615960085441B /* scanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D8A5FE1E1615960085441B /* scanQRViewController.m */; };
@@ -87,6 +90,11 @@
 		0000BEE31E13DAA900F3A049 /* NavgationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavgationView.h; path = DianBa/Class/HomePage/NavgationView.h; sourceTree = SOURCE_ROOT; };
 		0000BEE41E13DAA900F3A049 /* NavgationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavgationView.m; path = DianBa/Class/HomePage/NavgationView.m; sourceTree = SOURCE_ROOT; };
 		0000BEE61E13DACA00F3A049 /* NavgationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NavgationView.xib; path = DianBa/Class/HomePage/NavgationView.xib; sourceTree = SOURCE_ROOT; };
+		0032D50D1E1A733300CEF4B6 /* DetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsTableViewController.h; sourceTree = "<group>"; };
+		0032D50E1E1A733300CEF4B6 /* DetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsTableViewController.m; sourceTree = "<group>"; };
+		008C30BC1E1741F5003FA15A /* FoodEvaluateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEvaluateTableViewCell.h; sourceTree = "<group>"; };
+		008C30BD1E1741F5003FA15A /* FoodEvaluateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEvaluateTableViewCell.m; sourceTree = "<group>"; };
+		008C30BE1E1741F5003FA15A /* FoodEvaluateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodEvaluateTableViewCell.xib; sourceTree = "<group>"; };
 		009038CC1E15250400EE694F /* popUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = popUpView.h; path = DianBa/Class/HomePage/popUpView.h; sourceTree = SOURCE_ROOT; };
 		009038CD1E15250400EE694F /* popUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = popUpView.m; path = DianBa/Class/HomePage/popUpView.m; sourceTree = SOURCE_ROOT; };
 		009038CF1E15251600EE694F /* popUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = popUpView.xib; path = DianBa/Class/HomePage/popUpView.xib; sourceTree = SOURCE_ROOT; };
@@ -215,6 +223,42 @@
 			path = DQHotSearch;
 			sourceTree = "<group>";
 		};
+		008C30B01E17366C003FA15A /* Food Details */ = {
+			isa = PBXGroup;
+			children = (
+				008C30B31E1736D8003FA15A /* Model */,
+				008C30B21E1736D7003FA15A /* View */,
+				008C30B11E1736D6003FA15A /* Controller */,
+			);
+			name = "Food Details";
+			sourceTree = "<group>";
+		};
+		008C30B11E1736D6003FA15A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0032D50D1E1A733300CEF4B6 /* DetailsTableViewController.h */,
+				0032D50E1E1A733300CEF4B6 /* DetailsTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		008C30B21E1736D7003FA15A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				008C30BC1E1741F5003FA15A /* FoodEvaluateTableViewCell.h */,
+				008C30BD1E1741F5003FA15A /* FoodEvaluateTableViewCell.m */,
+				008C30BE1E1741F5003FA15A /* FoodEvaluateTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		008C30B31E1736D8003FA15A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9CC19962003B302C011C8299 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +270,7 @@
 		EF24DA381E132FD0006AA5E2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				008C30B01E17366C003FA15A /* Food Details */,
 				EFF3E29B1E1698510057E775 /* Tool */,
 				EF24DA791E132FD0006AA5E2 /* TakeOut */,
 				EF24DA391E132FD0006AA5E2 /* HomePage */,
@@ -789,6 +834,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF3E2C61E1699160057E775 /* OrderHeaderView.xib in Resources */,
+				008C30C01E1741F5003FA15A /* FoodEvaluateTableViewCell.xib in Resources */,
 				009038D01E15251600EE694F /* popUpView.xib in Resources */,
 				0000BEE71E13DACA00F3A049 /* NavgationView.xib in Resources */,
 				EFF3E2BA1E16990D0057E775 /* MenuCell.xib in Resources */,
@@ -867,7 +913,9 @@
 				EF24DA7F1E132FD0006AA5E2 /* HomePageViewController.m in Sources */,
 				EFF3E2B91E16990D0057E775 /* MenuCell.m in Sources */,
 				EF24DAA81E1330CE006AA5E2 /* UIBarButtonItem+BarButtonItem.m in Sources */,
+				008C30BF1E1741F5003FA15A /* FoodEvaluateTableViewCell.m in Sources */,
 				EF24DA851E132FD0006AA5E2 /* OrderFormViewController.m in Sources */,
+				0032D50F1E1A733300CEF4B6 /* DetailsTableViewController.m in Sources */,
 				EFF3E2D31E16994A0057E775 /* OrderMenuDetail.m in Sources */,
 				00D8A5FF1E1615960085441B /* scanQRViewController.m in Sources */,
 				EF24DA891E132FD0006AA5E2 /* HanyuPinyinOutputFormat.m in Sources */,

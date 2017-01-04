@@ -19,8 +19,8 @@
 }
 
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
-@property (nonatomic, strong) NavgationView * navgationView;
-@property (nonatomic, strong) popUpView * popUp;
+@property (nonatomic, strong) NavgationView *navgationView;
+@property (nonatomic, strong) popUpView *popUp;
 @end
 
 @implementation HomePageViewController

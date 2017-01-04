@@ -6,9 +6,9 @@
 //  Copyright © 2016年 wangchenlu. All rights reserved.
 //
 
-#import "foodEvaluateTableViewCell.h"
+#import "FoodEvaluateTableViewCell.h"
 
-@implementation foodEvaluateTableViewCell
+@implementation FoodEvaluateTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
